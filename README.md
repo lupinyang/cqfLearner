@@ -1,0 +1,105 @@
+# CQF Lexicon
+
+A lightweight Feishu web app prototype for collecting CQF vocabulary, generating CQF-context explanations with Zhipu AI, and reviewing words every night.
+
+## What is included
+
+- Add a word with only English word, official CQF module, and optional tags.
+- Generate detailed CQF-context Chinese explanation, English explanation, examples, related concepts, confusing terms, and memory hint.
+- Review queue with `known`, `vague`, and `unknown`.
+- JSON-file storage for the first version.
+- Feishu reminder integration scaffold for 22:00 daily reminders.
+- No npm dependencies.
+
+## Run locally
+
+```powershell
+cd D:\CQF\Jan26\cqf-lexicon
+Copy-Item .env.example .env
+npm start
+```
+
+Then open:
+
+```text
+http://localhost:8787
+```
+
+## Configure Zhipu AI
+
+Put your API key in `.env`:
+
+```text
+ZHIPU_API_KEY=your_key_here
+ZHIPU_MODEL=glm-4.7-flash
+```
+
+The server calls:
+
+```text
+https://open.bigmodel.cn/api/paas/v4/chat/completions
+```
+
+## Configure Feishu reminders
+
+Set these in `.env`:
+
+```text
+FEISHU_APP_ID=cli_xxx
+FEISHU_APP_SECRET=xxx
+FEISHU_RECEIVE_ID=ou_xxx
+FEISHU_RECEIVE_ID_TYPE=open_id
+PUBLIC_BASE_URL=https://your-domain.example.com
+REMINDER_HOUR=22
+REMINDER_MINUTE=0
+```
+
+Required Feishu app permissions:
+
+- Send messages as bot / application.
+- Access user ID if you want to resolve your own `open_id` from Feishu login later.
+
+For the first version, `FEISHU_RECEIVE_ID` is configured manually.
+
+## Tencent Cloud deployment notes
+
+1. Upload the `cqf-lexicon` folder to your server.
+2. Create `.env` from `.env.example`.
+3. Run with a process manager such as PM2.
+4. Put Nginx in front and enable HTTPS.
+5. Configure the HTTPS URL as the Feishu web app URL.
+
+Example:
+
+```bash
+node server.js
+```
+
+The built-in reminder checks once per minute and sends at 22:00 in the server's local timezone.
+
+## GitHub and production notes
+
+Do not commit `.env` or `data/store.json`.
+
+Set these environment variables on the target server:
+
+```text
+PORT=8787
+PUBLIC_BASE_URL=https://your-domain.example.com
+ZHIPU_API_KEY=your_key_here
+ZHIPU_MODEL=glm-4.7-flash
+ZHIPU_API_URL=https://open.bigmodel.cn/api/paas/v4/chat/completions
+```
+
+If Vercel is used only as the public routing layer, update `vercel.json`:
+
+```json
+{
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "https://YOUR_LOBSTER_SERVER_DOMAIN/$1"
+    }
+  ]
+}
+```

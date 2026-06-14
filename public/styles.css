@@ -1,0 +1,551 @@
+:root {
+  color-scheme: light;
+  --ink: #18212f;
+  --muted: #647085;
+  --line: #d9e0ea;
+  --surface: #ffffff;
+  --soft: #f4f7fb;
+  --accent: #146c75;
+  --accent-strong: #0f4f57;
+  --amber: #b7791f;
+  --red: #b42318;
+  --green: #217a53;
+  --shadow: 0 18px 40px rgba(26, 38, 58, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family:
+    Inter, "Segoe UI", "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+  color: var(--ink);
+  background: #eef3f7;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+.app-shell {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  min-height: 100vh;
+}
+
+.sidebar {
+  padding: 28px 22px;
+  background: #172331;
+  color: #f8fafc;
+}
+
+.brand {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  margin-bottom: 34px;
+}
+
+.brand-mark {
+  display: grid;
+  place-items: center;
+  width: 54px;
+  height: 54px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 8px;
+  font-weight: 800;
+}
+
+.brand h1,
+.workspace h2 {
+  margin: 0;
+  letter-spacing: 0;
+}
+
+.brand h1 {
+  font-size: 22px;
+}
+
+.brand p,
+.eyebrow {
+  margin: 4px 0 0;
+  color: #b8c4d4;
+  font-size: 13px;
+}
+
+.tabs {
+  display: grid;
+  gap: 8px;
+}
+
+.tab {
+  height: 44px;
+  padding: 0 14px;
+  border: 0;
+  border-radius: 8px;
+  color: #dbe6f2;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+}
+
+.tab.active,
+.tab:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+}
+
+.workspace {
+  padding: 30px;
+  min-width: 0;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 22px;
+}
+
+.workspace h2 {
+  font-size: 28px;
+}
+
+.eyebrow {
+  color: var(--muted);
+}
+
+.icon-button,
+.primary-button,
+.secondary-button,
+.review-button {
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.icon-button {
+  width: 42px;
+  height: 42px;
+  color: var(--ink);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  font-size: 20px;
+}
+
+.view {
+  display: none;
+}
+
+.view.active {
+  display: block;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.metric {
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.metric span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.metric strong {
+  font-size: 30px;
+}
+
+.form-panel,
+.filters {
+  display: grid;
+  gap: 14px;
+  max-width: 760px;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.filters {
+  grid-template-columns: 1fr 280px 150px;
+  max-width: none;
+  margin-bottom: 16px;
+}
+
+label span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+input,
+select {
+  width: 100%;
+  height: 44px;
+  padding: 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--ink);
+  background: #fbfdff;
+}
+
+input:focus,
+select:focus {
+  outline: 2px solid rgba(20, 108, 117, 0.24);
+  border-color: var(--accent);
+}
+
+.primary-button,
+.secondary-button {
+  min-height: 44px;
+  padding: 0 18px;
+}
+
+.primary-button {
+  color: #ffffff;
+  background: var(--accent);
+}
+
+.primary-button:hover {
+  background: var(--accent-strong);
+}
+
+.secondary-button {
+  border: 1px solid var(--line);
+  color: var(--ink);
+  background: var(--surface);
+}
+
+.secondary-button.compact {
+  min-height: 38px;
+  padding: 0 14px;
+}
+
+.status {
+  min-height: 24px;
+  margin-top: 14px;
+  color: var(--muted);
+}
+
+.word-list {
+  display: grid;
+  gap: 14px;
+}
+
+.plan-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 14px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.plan-toolbar h3,
+.plan-toolbar p {
+  margin: 0;
+}
+
+.plan-toolbar p {
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.date-strip {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 12px;
+  margin-bottom: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.date-check {
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  align-items: center;
+  gap: 8px;
+  min-width: 146px;
+  padding: 8px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fbfdff;
+}
+
+.date-check.done {
+  border-color: rgba(33, 122, 83, 0.42);
+  background: rgba(33, 122, 83, 0.08);
+}
+
+.date-check input {
+  width: 18px;
+  height: 18px;
+  padding: 0;
+}
+
+.date-check button {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: var(--ink);
+  text-align: left;
+  cursor: pointer;
+}
+
+.date-check span {
+  display: block;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.date-check strong {
+  font-size: 13px;
+}
+
+.study-plan-list {
+  display: grid;
+  gap: 18px;
+}
+
+.study-week {
+  display: grid;
+  gap: 12px;
+}
+
+.week-header {
+  padding: 18px 0 2px;
+}
+
+.week-header h3,
+.week-header p {
+  margin: 0;
+}
+
+.week-header p {
+  margin-top: 6px;
+  color: var(--muted);
+}
+
+.study-day {
+  scroll-margin-top: 20px;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.study-day.completed {
+  border-color: rgba(33, 122, 83, 0.42);
+}
+
+.study-day.focus-pulse {
+  outline: 3px solid rgba(20, 108, 117, 0.22);
+}
+
+.study-day-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.study-day-header p,
+.study-day-header h4 {
+  margin: 0;
+}
+
+.study-day-header p {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.study-day-header h4 {
+  font-size: 22px;
+}
+
+.complete-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--muted);
+}
+
+.complete-toggle input {
+  width: 18px;
+  height: 18px;
+  padding: 0;
+}
+
+.study-section {
+  margin-top: 14px;
+}
+
+.study-section h5 {
+  margin: 0 0 8px;
+  color: var(--accent-strong);
+  font-size: 14px;
+}
+
+.study-section ul {
+  margin: 0;
+  padding-left: 20px;
+  line-height: 1.62;
+}
+
+code {
+  padding: 2px 5px;
+  border-radius: 5px;
+  background: var(--soft);
+  color: #203048;
+}
+
+.math-inline {
+  padding: 1px 5px;
+  border-radius: 5px;
+  background: #f4f7fb;
+  color: #172331;
+  font-family: "Segoe UI", "Cambria Math", "Times New Roman", serif;
+  white-space: nowrap;
+}
+
+.word-card {
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.word-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: start;
+  margin-bottom: 14px;
+}
+
+.word-title {
+  margin: 0 0 6px;
+  font-size: 24px;
+}
+
+.module-label {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tag {
+  padding: 4px 8px;
+  border-radius: 8px;
+  background: var(--soft);
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.word-body {
+  display: grid;
+  gap: 10px;
+  line-height: 1.62;
+}
+
+.word-body p {
+  margin: 0;
+}
+
+.word-body strong {
+  color: var(--accent-strong);
+}
+
+.review-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.review-button {
+  min-width: 86px;
+  min-height: 38px;
+  padding: 0 14px;
+  color: #ffffff;
+}
+
+.review-button.known {
+  background: var(--green);
+}
+
+.review-button.vague {
+  background: var(--amber);
+}
+
+.review-button.unknown {
+  background: var(--red);
+}
+
+.empty {
+  padding: 22px;
+  border: 1px dashed var(--line);
+  border-radius: 8px;
+  color: var(--muted);
+  background: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 860px) {
+  .app-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    padding: 18px;
+  }
+
+  .tabs {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .tab {
+    text-align: center;
+    padding: 0 8px;
+  }
+
+  .workspace {
+    padding: 20px;
+  }
+
+  .summary-grid,
+  .filters {
+    grid-template-columns: 1fr;
+  }
+}

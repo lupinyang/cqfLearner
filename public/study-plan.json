@@ -1,0 +1,4025 @@
+{
+  "title": "CQF Daily Study Plan",
+  "intro": [
+    "Start date: 2026-06-07",
+    "Daily time budget: 1 hour",
+    "Scope: current local materials in `D:\\CQF\\Jan26`, mainly `M1-*` to `M5-*`, `PythonPrimer`, `PythonLab`, `Tutorials`, `Maths Primer`, and `Exam 1`.",
+    "Daily structure:",
+    "- 10 min: review yesterday's formulas, code, and mistakes.",
+    "- 20 min: read the assigned notes or annotated notes.",
+    "- 25 min: code or solve exercises without looking at the solution first.",
+    "- 5 min: answer the English mastery questions in writing.",
+    "Completion rule:",
+    "- A day is complete only if you can explain the key idea in your own words and produce the assigned calculation, derivation, or code output.",
+    "- For coding days, do not only run the notebook. Recreate the core function or workflow in your own notebook or `.py` file.",
+    "- For exercise days, attempt first, then compare with the relevant `Solutions.pdf`.",
+    "Recommended working folder:",
+    "- Create your own practice folder: `D:\\CQF\\Jan26\\My_CQF_Practice`",
+    "- Suggested subfolders: `M1`, `M2`, `M3`, `M4`, `M5`, `projects`, `notes`",
+    "1. Foundation: Python, calculus, probability, linear algebra.",
+    "2. M1: random behaviour of assets, binomial models, PDEs, stochastic calculus, martingales.",
+    "3. M2: portfolio management, optimisation, VaR/ES, empirical returns, GARCH, regulation, collateral.",
+    "4. M3: Black-Scholes, martingale pricing, numerical methods, Monte Carlo, FDM, exotic options, volatility, FX options.",
+    "5. M4: machine learning foundations, supervised learning, tree models, financial ML cases.",
+    "6. M5: unsupervised learning, neural networks, NLP, reinforcement learning, advanced applications.",
+    "---"
+  ],
+  "weeks": [
+    {
+      "id": "week-1",
+      "number": 1,
+      "title": "Python And Data Foundations",
+      "goal": "become comfortable with Python notebooks, arrays, pandas DataFrames, financial price data, and basic return calculations.",
+      "days": [
+        "day-1",
+        "day-2",
+        "day-3",
+        "day-4",
+        "day-5",
+        "day-6",
+        "day-7"
+      ]
+    },
+    {
+      "id": "week-2",
+      "number": 2,
+      "title": "Maths Primer For CQF",
+      "goal": "refresh the maths needed for CQF: calculus, probability, linear algebra, and differential equations.",
+      "days": [
+        "day-8",
+        "day-9",
+        "day-10",
+        "day-11",
+        "day-12",
+        "day-13",
+        "day-14"
+      ]
+    },
+    {
+      "id": "week-3",
+      "number": 3,
+      "title": "M1-1 Random Behaviour Of Assets",
+      "goal": "understand random asset behaviour, price versus return modelling, drift, volatility, and simple stochastic simulation.",
+      "days": [
+        "day-15",
+        "day-16",
+        "day-17",
+        "day-18",
+        "day-19",
+        "day-20",
+        "day-21"
+      ]
+    },
+    {
+      "id": "week-4",
+      "number": 4,
+      "title": "M1-2 Binomial Models",
+      "goal": "understand one-step and multi-step binomial pricing, risk-neutral probability, no-arbitrage, and backward induction.",
+      "days": [
+        "day-22",
+        "day-23",
+        "day-24",
+        "day-25",
+        "day-26",
+        "day-27",
+        "day-28"
+      ]
+    },
+    {
+      "id": "week-5",
+      "number": 5,
+      "title": "M1-3 PDEs And Transition Density Functions",
+      "goal": "connect stochastic asset dynamics with PDEs, transition densities, and pricing equations.",
+      "days": [
+        "day-29",
+        "day-30",
+        "day-31",
+        "day-32",
+        "day-33",
+        "day-34",
+        "day-35"
+      ]
+    },
+    {
+      "id": "week-6",
+      "number": 6,
+      "title": "M1-4 And M1-5 Stochastic Calculus And Martingales",
+      "goal": "understand Brownian motion, Ito calculus, stochastic integrals, martingales, and why they matter for pricing.",
+      "days": [
+        "day-36",
+        "day-37",
+        "day-38",
+        "day-39",
+        "day-40",
+        "day-41",
+        "day-42"
+      ]
+    },
+    {
+      "id": "week-7",
+      "number": 7,
+      "title": "M2-1 And M2-2 Portfolio Management And Optimisation",
+      "goal": "understand portfolio return/risk, efficient frontier, optimisation constraints, and Python implementation.",
+      "days": [
+        "day-43",
+        "day-44",
+        "day-45",
+        "day-46",
+        "day-47",
+        "day-48",
+        "day-49"
+      ]
+    },
+    {
+      "id": "week-8",
+      "number": 8,
+      "title": "M2-3 To M2-5 VaR, ES, Asset Returns, And GARCH",
+      "goal": "measure market risk, understand empirical stylised facts, and model volatility clustering.",
+      "days": [
+        "day-50",
+        "day-51",
+        "day-52",
+        "day-53",
+        "day-54",
+        "day-55",
+        "day-56"
+      ]
+    },
+    {
+      "id": "week-9",
+      "number": 9,
+      "title": "M2-6, M2-7, And Exam 1 Review",
+      "goal": "understand risk regulation, collateral, margins, and consolidate Exam 1 style material.",
+      "days": [
+        "day-57",
+        "day-58",
+        "day-59",
+        "day-60",
+        "day-61",
+        "day-62",
+        "day-63"
+      ]
+    },
+    {
+      "id": "week-10",
+      "number": 10,
+      "title": "M3-1 To M3-3 Black-Scholes And Martingale Pricing",
+      "goal": "understand Black-Scholes assumptions, formula, Greeks, and martingale theory applied to option pricing.",
+      "days": [
+        "day-64",
+        "day-65",
+        "day-66",
+        "day-67",
+        "day-68",
+        "day-69",
+        "day-70"
+      ]
+    },
+    {
+      "id": "week-11",
+      "number": 11,
+      "title": "M3-4 To M3-6 Numerical Methods And Monte Carlo",
+      "goal": "understand numerical methods, Monte Carlo simulation, convergence, and linear systems.",
+      "days": [
+        "day-71",
+        "day-72",
+        "day-73",
+        "day-74",
+        "day-75",
+        "day-76",
+        "day-77"
+      ]
+    },
+    {
+      "id": "week-12",
+      "number": 12,
+      "title": "M3-7 To M3-9 FDM, Exotic Options, And Volatility",
+      "goal": "understand finite difference methods, exotic option intuition, and volatility modelling.",
+      "days": [
+        "day-78",
+        "day-79",
+        "day-80",
+        "day-81",
+        "day-82",
+        "day-83",
+        "day-84"
+      ]
+    },
+    {
+      "id": "week-13",
+      "number": 13,
+      "title": "M3-10, M3-11, FX Options, And M3 Project",
+      "goal": "finish M3 materials and consolidate option pricing into a reusable coding project.",
+      "days": [
+        "day-85",
+        "day-86",
+        "day-87",
+        "day-88",
+        "day-89",
+        "day-90",
+        "day-91"
+      ]
+    },
+    {
+      "id": "week-14",
+      "number": 14,
+      "title": "M4-1 To M4-3 Machine Learning Foundations",
+      "goal": "understand ML vocabulary, supervised learning, train/test split, loss functions, and linear regression.",
+      "days": [
+        "day-92",
+        "day-93",
+        "day-94",
+        "day-95",
+        "day-96",
+        "day-97",
+        "day-98"
+      ]
+    },
+    {
+      "id": "week-15",
+      "number": 15,
+      "title": "M4-4 To M4-7 Supervised ML, Trees, And Case Studies",
+      "goal": "build classification and tree-based models for financial prediction and understand evaluation.",
+      "days": [
+        "day-99",
+        "day-100",
+        "day-101",
+        "day-102",
+        "day-103",
+        "day-104",
+        "day-105"
+      ]
+    },
+    {
+      "id": "week-16",
+      "number": 16,
+      "title": "M5-1 To M5-3 Unsupervised Learning",
+      "goal": "understand clustering, dimensionality intuition, K-Means, and Self Organising Maps.",
+      "days": [
+        "day-106",
+        "day-107",
+        "day-108",
+        "day-109",
+        "day-110",
+        "day-111",
+        "day-112"
+      ]
+    },
+    {
+      "id": "week-17",
+      "number": 17,
+      "title": "M5-4 To M5-6 Neural Networks And NLP",
+      "goal": "build basic neural network intuition and understand NLP as a financial data source.",
+      "days": [
+        "day-113",
+        "day-114",
+        "day-115",
+        "day-116",
+        "day-117",
+        "day-118",
+        "day-119"
+      ]
+    },
+    {
+      "id": "week-18",
+      "number": 18,
+      "title": "M5-7 To M5-9 Reinforcement Learning And Advanced Topics",
+      "goal": "understand RL concepts, dynamic asset allocation, quantum computing overview, and M5 integration.",
+      "days": [
+        "day-120",
+        "day-121",
+        "day-122",
+        "day-123",
+        "day-124",
+        "day-125",
+        "day-126"
+      ]
+    },
+    {
+      "id": "week-19",
+      "number": 19,
+      "title": "Python Coding Consolidation",
+      "goal": "convert notebook familiarity into independent programming ability.",
+      "days": [
+        "day-127",
+        "day-128",
+        "day-129",
+        "day-130",
+        "day-131",
+        "day-132",
+        "day-133"
+      ]
+    },
+    {
+      "id": "week-20",
+      "number": 20,
+      "title": "M1-M3 Derivation And Pricing Review",
+      "goal": "strengthen mathematical understanding behind pricing models.",
+      "days": [
+        "day-134",
+        "day-135",
+        "day-136",
+        "day-137",
+        "day-138",
+        "day-139",
+        "day-140"
+      ]
+    },
+    {
+      "id": "week-21",
+      "number": 21,
+      "title": "M4-M5 Machine Learning Review",
+      "goal": "consolidate financial ML into a usable research workflow.",
+      "days": [
+        "day-141",
+        "day-142",
+        "day-143",
+        "day-144",
+        "day-145",
+        "day-146",
+        "day-147"
+      ]
+    },
+    {
+      "id": "week-22",
+      "number": 22,
+      "title": "Final Integrated Project",
+      "goal": "produce one polished project showing independent quant coding ability.",
+      "days": [
+        "day-148",
+        "day-149",
+        "day-150",
+        "day-151",
+        "day-152",
+        "day-153",
+        "day-154"
+      ]
+    },
+    {
+      "id": "week-23",
+      "number": 23,
+      "title": "Weak Area Repair",
+      "goal": "deliberately repair weak areas discovered during the final project.",
+      "days": [
+        "day-155",
+        "day-156",
+        "day-157",
+        "day-158",
+        "day-159",
+        "day-160",
+        "day-161"
+      ]
+    },
+    {
+      "id": "week-24",
+      "number": 24,
+      "title": "Final Mastery Check",
+      "goal": "verify that you can explain, solve, and code core CQF ideas independently.",
+      "days": [
+        "day-162",
+        "day-163",
+        "day-164",
+        "day-165",
+        "day-166",
+        "day-167",
+        "day-168"
+      ]
+    }
+  ],
+  "days": [
+    {
+      "id": "day-1",
+      "number": 1,
+      "date": "2026-06-07",
+      "weekId": "week-1",
+      "files": [
+        "`PythonPrimer\\CQF_Python_Primer\\Part 1.ipynb`",
+        "`PythonPrimer\\Python Primer Install Steps (1).pdf`"
+      ],
+      "knowledge": [
+        "Notebook execution, variables, numeric types, strings, lists.",
+        "Python as a calculator for financial formulas."
+      ],
+      "checklist": [
+        "[ ] Run the first notebook.",
+        "[ ] Create your own notebook `My_CQF_Practice\\M1\\day01_python_basics.ipynb`.",
+        "[ ] Compute simple interest, compound interest, and present value for three examples."
+      ],
+      "masteryQuestions": [
+        "What is the difference between a variable name and the value stored in that variable?",
+        "Write a Python expression for the present value of 10,000 paid in 3 years at 5% annual interest."
+      ]
+    },
+    {
+      "id": "day-2",
+      "number": 2,
+      "date": "2026-06-08",
+      "weekId": "week-1",
+      "files": [
+        "`PythonPrimer\\CQF_Python_Primer\\Part 2.ipynb`"
+      ],
+      "knowledge": [
+        "Conditions, loops, functions, basic debugging.",
+        "Turning repeated calculations into reusable code."
+      ],
+      "checklist": [
+        "[ ] Write a function `compound_value(pv, r, n)`.",
+        "[ ] Write a loop that prints values for rates from 1% to 10%.",
+        "[ ] Add comments explaining input, output, and assumptions."
+      ],
+      "masteryQuestions": [
+        "Why is a function preferable to copying the same formula many times?",
+        "What should a financial function return if the input rate is negative?"
+      ]
+    },
+    {
+      "id": "day-3",
+      "number": 3,
+      "date": "2026-06-09",
+      "weekId": "week-1",
+      "files": [
+        "`PythonPrimer\\CQF_Python_Primer\\Part 3.ipynb`"
+      ],
+      "knowledge": [
+        "NumPy arrays, vectorised operations, pandas Series/DataFrames.",
+        "Difference between scalar and vector calculations."
+      ],
+      "checklist": [
+        "[ ] Create a NumPy array of daily prices.",
+        "[ ] Compute simple returns and log returns.",
+        "[ ] Put prices and returns into a DataFrame."
+      ],
+      "masteryQuestions": [
+        "What is the difference between simple return and log return?",
+        "Why is vectorisation useful in quantitative finance?"
+      ]
+    },
+    {
+      "id": "day-4",
+      "number": 4,
+      "date": "2026-06-10",
+      "weekId": "week-1",
+      "files": [
+        "`PythonLab\\JA26P1 Introduction to Financial Time Series-1\\.ipynb_checkpoints\\1_financialdata-checkpoint.ipynb`",
+        "`PythonLab\\JA26P1 Introduction to Financial Time Series-1\\1_financialdata.ipynb`"
+      ],
+      "knowledge": [
+        "Financial data fields: Open, High, Low, Close, Volume.",
+        "Market data retrieval, data quality, missing data."
+      ],
+      "checklist": [
+        "[ ] Inspect why `1_financialdata.ipynb` is empty and use the checkpoint or zip version for study.",
+        "[ ] Recreate the data loading cells in your own notebook.",
+        "[ ] Compute daily returns for one ticker or local CSV."
+      ],
+      "masteryQuestions": [
+        "Why can public market data be unsuitable for production trading systems?",
+        "What checks should you run before using downloaded price data?"
+      ]
+    },
+    {
+      "id": "day-5",
+      "number": 5,
+      "date": "2026-06-11",
+      "weekId": "week-1",
+      "files": [
+        "`PythonLab\\JA26P1 Introduction to Financial Time Series-1\\2_datastorage.ipynb`"
+      ],
+      "knowledge": [
+        "Data storage concepts, tables, instruments, time series persistence.",
+        "Difference between raw market data and transformed analytics."
+      ],
+      "checklist": [
+        "[ ] Read the notebook sections on database tables and instruments.",
+        "[ ] Sketch a simple schema for prices: ticker, date, close, volume.",
+        "[ ] Save a small price DataFrame to CSV and reload it."
+      ],
+      "masteryQuestions": [
+        "Why is reproducible data storage important for model validation?",
+        "What columns would you require in a clean daily equity price table?"
+      ]
+    },
+    {
+      "id": "day-6",
+      "number": 6,
+      "date": "2026-06-12",
+      "weekId": "week-1",
+      "files": [
+        "`FinancePrimer\\Time value of money - Compounding and future values.pdf`",
+        "`FinancePrimer\\Time value of money - Discounting and present values.pdf`"
+      ],
+      "knowledge": [
+        "Discounting, compounding, future value, present value.",
+        "Financial intuition behind discount rates."
+      ],
+      "checklist": [
+        "[ ] Summarise the difference between discounting and compounding.",
+        "[ ] Write Python functions for future value and present value.",
+        "[ ] Solve three numerical examples manually and with Python."
+      ],
+      "masteryQuestions": [
+        "Why does a higher discount rate reduce present value?",
+        "How does continuous compounding differ from annual compounding?"
+      ]
+    },
+    {
+      "id": "day-7",
+      "number": 7,
+      "date": "2026-06-13",
+      "weekId": "week-1",
+      "files": [
+        "`PythonPrimer\\CQF_Python_Primer\\AAPL.csv`",
+        "`FinancePrimer\\Fundamentals - An overview of financial services and markets.pdf`"
+      ],
+      "knowledge": [
+        "End-to-end data workflow: load, clean, calculate, plot.",
+        "Asset classes and market participants."
+      ],
+      "checklist": [
+        "[ ] Load `AAPL.csv`.",
+        "[ ] Plot close prices and daily returns.",
+        "[ ] Write a one-page note: \"What does a quant do with market data?\""
+      ],
+      "masteryQuestions": [
+        "What is the difference between a price series and a return series?",
+        "Why do quants usually model returns rather than raw prices?"
+      ]
+    },
+    {
+      "id": "day-8",
+      "number": 8,
+      "date": "2026-06-14",
+      "weekId": "week-2",
+      "files": [
+        "`Maths Primer\\CQF_Maths_Primer_Calculus_Annotated.pdf`",
+        "`Maths Primer\\CQF_Maths_Primer_Calculus_Exercises.pdf`"
+      ],
+      "knowledge": [
+        "Derivatives, partial derivatives, Taylor expansion.",
+        "Financial interpretation of slope and curvature."
+      ],
+      "checklist": [
+        "[ ] Read derivative and Taylor expansion sections.",
+        "[ ] Solve at least 3 calculus exercises.",
+        "[ ] Use Python to plot a function and its tangent approximation."
+      ],
+      "masteryQuestions": [
+        "What does the first derivative measure?",
+        "Why is Taylor expansion useful for option Greeks?"
+      ]
+    },
+    {
+      "id": "day-9",
+      "number": 9,
+      "date": "2026-06-15",
+      "weekId": "week-2",
+      "files": [
+        "`Maths Primer\\CQF-P-MP-PS-Annotated.pdf`",
+        "`Maths Primer\\CQF-P-MP-PS-Exercises.pdf`"
+      ],
+      "knowledge": [
+        "Probability, random variables, expectation, variance.",
+        "Conditional probability and independence."
+      ],
+      "checklist": [
+        "[ ] Read expectation and variance sections.",
+        "[ ] Solve at least 3 probability exercises.",
+        "[ ] Simulate 10,000 coin tosses in Python and estimate mean/variance."
+      ],
+      "masteryQuestions": [
+        "What is the difference between independence and zero correlation?",
+        "How is variance related to financial risk?"
+      ]
+    },
+    {
+      "id": "day-10",
+      "number": 10,
+      "date": "2026-06-16",
+      "weekId": "week-2",
+      "files": [
+        "`Maths Primer\\CQF-P-MP-ILA-Annotated.pdf`",
+        "`Maths Primer\\CQF-P-MP-ILA-Exercises.pdf`"
+      ],
+      "knowledge": [
+        "Vectors, matrices, matrix multiplication, inverse.",
+        "Covariance matrix as a financial object."
+      ],
+      "checklist": [
+        "[ ] Read vector and matrix sections.",
+        "[ ] Compute a 2-asset covariance matrix in Python.",
+        "[ ] Explain why covariance matrices matter for portfolios."
+      ],
+      "masteryQuestions": [
+        "What does a covariance matrix represent?",
+        "Why must dimensions match in matrix multiplication?"
+      ]
+    },
+    {
+      "id": "day-11",
+      "number": 11,
+      "date": "2026-06-17",
+      "weekId": "week-2",
+      "files": [
+        "`Maths Primer\\CQF-P-MP-DE-Annotated.pdf`",
+        "`Maths Primer\\CQF-P-MP-DE-Exercises.pdf`"
+      ],
+      "knowledge": [
+        "Ordinary differential equations, boundary conditions.",
+        "Link from differential equations to pricing models."
+      ],
+      "checklist": [
+        "[ ] Read first-order ODE examples.",
+        "[ ] Solve at least 2 differential equation exercises.",
+        "[ ] Use Python to numerically solve a simple ODE."
+      ],
+      "masteryQuestions": [
+        "What is an initial condition?",
+        "Why do pricing problems often require boundary conditions?"
+      ]
+    },
+    {
+      "id": "day-12",
+      "number": 12,
+      "date": "2026-06-18",
+      "weekId": "week-2",
+      "files": [
+        "`Tutorials\\JA26T1 Further Probability Theory.pdf`",
+        "`Tutorials\\JA26T1 Further Probability Theory Annotated.pdf`"
+      ],
+      "knowledge": [
+        "Distributions, normal distribution, moments, convergence intuition."
+      ],
+      "checklist": [
+        "[ ] Read distribution and expectation sections.",
+        "[ ] Simulate normal returns and plot histogram.",
+        "[ ] Compare sample mean with theoretical mean."
+      ],
+      "masteryQuestions": [
+        "What is a probability density function?",
+        "Why is the normal distribution both useful and dangerous in finance?"
+      ]
+    },
+    {
+      "id": "day-13",
+      "number": 13,
+      "date": "2026-06-19",
+      "weekId": "week-2",
+      "files": [
+        "`Tutorials\\JA26T2 Differential Equations_Theory & Applications_Annotated.pdf`"
+      ],
+      "knowledge": [
+        "DE applications, exponential growth/decay, numerical approximation."
+      ],
+      "checklist": [
+        "[ ] Summarise one financial application of differential equations.",
+        "[ ] Implement Euler's method for a simple ODE.",
+        "[ ] Compare numerical and analytical solutions."
+      ],
+      "masteryQuestions": [
+        "What error can Euler's method introduce?",
+        "Why does time step size matter in numerical methods?"
+      ]
+    },
+    {
+      "id": "day-14",
+      "number": 14,
+      "date": "2026-06-20",
+      "weekId": "week-2",
+      "files": [
+        "Review files from Week 1 and Week 2."
+      ],
+      "knowledge": [
+        "Python + maths integration."
+      ],
+      "checklist": [
+        "[ ] Build a mini notebook calculating PV, returns, volatility, covariance.",
+        "[ ] Write a 10-line summary of what you can now code independently.",
+        "[ ] Mark weak areas for review."
+      ],
+      "masteryQuestions": [
+        "How would you explain volatility to a non-technical investor?",
+        "Which mathematical concept this week is most important for option pricing?"
+      ]
+    },
+    {
+      "id": "day-15",
+      "number": 15,
+      "date": "2026-06-21",
+      "weekId": "week-3",
+      "files": [
+        "`M1-1\\JA261.1 Notes.pdf`",
+        "`M1-1\\JA261.1 Annotated Notes.pdf`"
+      ],
+      "knowledge": [
+        "Random behaviour of assets.",
+        "Price paths, returns, randomness, model assumptions."
+      ],
+      "checklist": [
+        "[ ] Read the first half of the notes.",
+        "[ ] Define price, return, drift, volatility in your own words.",
+        "[ ] Simulate 10 random return paths in Python."
+      ],
+      "masteryQuestions": [
+        "Why is randomness central to asset price modelling?",
+        "What is the difference between drift and volatility?"
+      ]
+    },
+    {
+      "id": "day-16",
+      "number": 16,
+      "date": "2026-06-22",
+      "weekId": "week-3",
+      "files": [
+        "`M1-1\\JA261.1 Notes.pdf`",
+        "`M1-1\\JA261.1 SPX.csv`"
+      ],
+      "knowledge": [
+        "Empirical returns, mean, standard deviation, annualisation."
+      ],
+      "checklist": [
+        "[ ] Load `SPX.csv`.",
+        "[ ] Compute daily log returns, annualised mean, annualised volatility.",
+        "[ ] Compare empirical return distribution with a normal distribution."
+      ],
+      "masteryQuestions": [
+        "Why do we annualise volatility by multiplying by the square root of time?",
+        "What can a histogram reveal that mean and variance cannot?"
+      ]
+    },
+    {
+      "id": "day-17",
+      "number": 17,
+      "date": "2026-06-23",
+      "weekId": "week-3",
+      "files": [
+        "`M1-1\\JA261.1 Exercises.pdf`",
+        "`M1-1\\JA261.1 Solutions.pdf`"
+      ],
+      "knowledge": [
+        "Applying random asset behaviour formulas."
+      ],
+      "checklist": [
+        "[ ] Attempt at least 3 exercises before opening solutions.",
+        "[ ] Correct your mistakes in a separate note.",
+        "[ ] Write one Python check for a numerical exercise."
+      ],
+      "masteryQuestions": [
+        "What assumptions are hidden in a simple random walk model?",
+        "How would you test whether a simulated path has the intended volatility?"
+      ]
+    },
+    {
+      "id": "day-18",
+      "number": 18,
+      "date": "2026-06-24",
+      "weekId": "week-3",
+      "files": [
+        "`M1-1\\Solution.ipynb`"
+      ],
+      "knowledge": [
+        "Course solution workflow and reproducibility."
+      ],
+      "checklist": [
+        "[ ] Run or inspect the solution notebook.",
+        "[ ] Recreate one calculation without copying.",
+        "[ ] Add one chart showing simulated versus historical behaviour."
+      ],
+      "masteryQuestions": [
+        "What makes a notebook reproducible?",
+        "Why should code cells be run from top to bottom before submission?"
+      ]
+    },
+    {
+      "id": "day-19",
+      "number": 19,
+      "date": "2026-06-25",
+      "weekId": "week-3",
+      "files": [
+        "`M1-1\\JA261.1 Whiteboard.pdf`",
+        "`M1-1\\JA261.1 Annotated Excel.xlsm`"
+      ],
+      "knowledge": [
+        "Whiteboard intuition and spreadsheet comparison."
+      ],
+      "checklist": [
+        "[ ] Review whiteboard derivations.",
+        "[ ] Compare spreadsheet logic with Python logic.",
+        "[ ] Translate one spreadsheet formula into Python."
+      ],
+      "masteryQuestions": [
+        "What are the advantages of Python over Excel for simulation?",
+        "What are the advantages of Excel for quick model inspection?"
+      ]
+    },
+    {
+      "id": "day-20",
+      "number": 20,
+      "date": "2026-06-26",
+      "weekId": "week-3",
+      "files": [
+        "`M1-1\\JA261.1 Exercises.pdf`"
+      ],
+      "knowledge": [
+        "Consolidation of random asset behaviour."
+      ],
+      "checklist": [
+        "[ ] Complete remaining easy and medium exercises from M1-1.",
+        "[ ] Build a one-page formula sheet.",
+        "[ ] Write `simulate_returns(mu, sigma, n_days, n_paths)`."
+      ],
+      "masteryQuestions": [
+        "What parameters are required to simulate a simple return process?",
+        "What output shape should a multi-path simulation function return?"
+      ]
+    },
+    {
+      "id": "day-21",
+      "number": 21,
+      "date": "2026-06-27",
+      "weekId": "week-3",
+      "files": [
+        "Review `M1-1`."
+      ],
+      "knowledge": [
+        "Weekly integration."
+      ],
+      "checklist": [
+        "[ ] Produce a mini report with SPX return statistics and simulated paths.",
+        "[ ] Explain results in 5 bullet points.",
+        "[ ] Commit or save your notebook in `My_CQF_Practice\\M1`."
+      ],
+      "masteryQuestions": [
+        "How would you explain the limitation of modelling returns as normal?",
+        "What would you improve in your simulation if using it for risk management?"
+      ]
+    },
+    {
+      "id": "day-22",
+      "number": 22,
+      "date": "2026-06-28",
+      "weekId": "week-4",
+      "files": [
+        "`M1-2\\JA261.2 Notes.pdf`",
+        "`M1-2\\JA261.2 Annotated Notes.pdf`"
+      ],
+      "knowledge": [
+        "Binomial model structure, up/down moves, no-arbitrage."
+      ],
+      "checklist": [
+        "[ ] Read the introduction to binomial models.",
+        "[ ] Draw a one-step stock price tree.",
+        "[ ] Calculate one call payoff by hand."
+      ],
+      "masteryQuestions": [
+        "What is the purpose of a binomial tree?",
+        "What does no-arbitrage mean in a one-step model?"
+      ]
+    },
+    {
+      "id": "day-23",
+      "number": 23,
+      "date": "2026-06-29",
+      "weekId": "week-4",
+      "files": [
+        "`M1-2\\JA261.2 Notes.pdf`"
+      ],
+      "knowledge": [
+        "Risk-neutral probability and discounted expected payoff."
+      ],
+      "checklist": [
+        "[ ] Derive the risk-neutral probability formula.",
+        "[ ] Price one European call manually.",
+        "[ ] Write a Python function for one-step binomial pricing."
+      ],
+      "masteryQuestions": [
+        "Why is risk-neutral probability not the same as real-world probability?",
+        "Why do we discount the expected payoff?"
+      ]
+    },
+    {
+      "id": "day-24",
+      "number": 24,
+      "date": "2026-06-30",
+      "weekId": "week-4",
+      "files": [
+        "`PythonLab\\JA26P2 Binomial Trees in Option Pricing\\4_binomialtree.ipynb`"
+      ],
+      "knowledge": [
+        "Multi-step binomial tree and backward induction."
+      ],
+      "checklist": [
+        "[ ] Run the binomial tree notebook.",
+        "[ ] Recreate the tree arrays in your own code.",
+        "[ ] Price a 3-step European call."
+      ],
+      "masteryQuestions": [
+        "What is backward induction?",
+        "Why does increasing the number of steps improve approximation?"
+      ]
+    },
+    {
+      "id": "day-25",
+      "number": 25,
+      "date": "2026-07-01",
+      "weekId": "week-4",
+      "files": [
+        "`M1-2\\JA261.2 Exercises.pdf`",
+        "`M1-2\\JA261.2 Solutions.pdf`"
+      ],
+      "knowledge": [
+        "Exercise application of binomial pricing."
+      ],
+      "checklist": [
+        "[ ] Attempt at least 3 M1-2 exercises.",
+        "[ ] Verify one answer with Python.",
+        "[ ] Identify any formula you had to look up."
+      ],
+      "masteryQuestions": [
+        "How do terminal payoffs differ for calls and puts?",
+        "How does an American option change the backward induction step?"
+      ]
+    },
+    {
+      "id": "day-26",
+      "number": 26,
+      "date": "2026-07-02",
+      "weekId": "week-4",
+      "files": [
+        "`M1-2\\JA261.2 Excel Completed.xlsm`",
+        "`PythonLab\\JA26P2 Binomial Trees in Option Pricing\\4_binomialtree.ipynb`"
+      ],
+      "knowledge": [
+        "Spreadsheet tree versus Python tree."
+      ],
+      "checklist": [
+        "[ ] Compare Excel and Python implementation.",
+        "[ ] Implement `binomial_price(S, K, r, sigma, T, N, option_type)`.",
+        "[ ] Test call and put prices."
+      ],
+      "masteryQuestions": [
+        "What inputs does a binomial option pricer need?",
+        "What bug might occur if array indexing is reversed?"
+      ]
+    },
+    {
+      "id": "day-27",
+      "number": 27,
+      "date": "2026-07-03",
+      "weekId": "week-4",
+      "files": [
+        "`PythonLab\\JA26P2 Binomial Trees in Option Pricing\\3_quantmodcharts.ipynb`"
+      ],
+      "knowledge": [
+        "Visualising financial data with line, scatter, OHLC, candlestick charts."
+      ],
+      "checklist": [
+        "[ ] Run or inspect the chart notebook.",
+        "[ ] Create one candlestick or line chart from available data.",
+        "[ ] Explain what the chart shows about volatility."
+      ],
+      "masteryQuestions": [
+        "What information does an OHLC chart contain?",
+        "Why is visual inspection useful before modelling?"
+      ]
+    },
+    {
+      "id": "day-28",
+      "number": 28,
+      "date": "2026-07-04",
+      "weekId": "week-4",
+      "files": [
+        "Review `M1-2`."
+      ],
+      "knowledge": [
+        "Binomial model consolidation."
+      ],
+      "checklist": [
+        "[ ] Write a mini notebook comparing 1, 3, 10, 50 tree steps.",
+        "[ ] Explain convergence in plain English.",
+        "[ ] Add one markdown cell describing no-arbitrage."
+      ],
+      "masteryQuestions": [
+        "What happens to the binomial price as the number of steps increases?",
+        "Why is the binomial model a bridge to continuous-time pricing?"
+      ]
+    },
+    {
+      "id": "day-29",
+      "number": 29,
+      "date": "2026-07-05",
+      "weekId": "week-5",
+      "files": [
+        "`M1-3\\JA261.3 Notes.pdf`",
+        "`M1-3\\JA261.3 Annotated.pdf`"
+      ],
+      "knowledge": [
+        "PDE intuition, transition density, diffusion."
+      ],
+      "checklist": [
+        "[ ] Read the first half of notes.",
+        "[ ] Define transition density in your own words.",
+        "[ ] Sketch how a probability density evolves over time."
+      ],
+      "masteryQuestions": [
+        "What is a transition density function?",
+        "Why do diffusion models lead to PDEs?"
+      ]
+    },
+    {
+      "id": "day-30",
+      "number": 30,
+      "date": "2026-07-06",
+      "weekId": "week-5",
+      "files": [
+        "`M1-3\\JA261.3 Notes.pdf`"
+      ],
+      "knowledge": [
+        "Forward and backward equations, pricing interpretation."
+      ],
+      "checklist": [
+        "[ ] Read sections on PDE forms.",
+        "[ ] Write a note comparing forward versus backward perspectives.",
+        "[ ] Use Python to plot normal densities with increasing variance."
+      ],
+      "masteryQuestions": [
+        "What is the difference between a forward and backward equation?",
+        "Why does uncertainty spread over time in a diffusion process?"
+      ]
+    },
+    {
+      "id": "day-31",
+      "number": 31,
+      "date": "2026-07-07",
+      "weekId": "week-5",
+      "files": [
+        "`M1-3\\JA261.3 Exercise.pdf`",
+        "`M1-3\\JA261.3 Solutions.pdf`"
+      ],
+      "knowledge": [
+        "PDE exercise practice."
+      ],
+      "checklist": [
+        "[ ] Attempt at least 2 exercises.",
+        "[ ] Compare with solutions.",
+        "[ ] Write down every boundary or terminal condition you see."
+      ],
+      "masteryQuestions": [
+        "Why are terminal conditions common in option pricing?",
+        "What is the financial meaning of a boundary condition?"
+      ]
+    },
+    {
+      "id": "day-32",
+      "number": 32,
+      "date": "2026-07-08",
+      "weekId": "week-5",
+      "files": [
+        "`Tutorials\\JA26T2 Differential Equations_Theory & Applications_Annotated.pdf`"
+      ],
+      "knowledge": [
+        "Differential equation reinforcement."
+      ],
+      "checklist": [
+        "[ ] Revisit numerical DE examples.",
+        "[ ] Implement Euler approximation again without looking.",
+        "[ ] Note how PDEs extend ODE ideas."
+      ],
+      "masteryQuestions": [
+        "How does a PDE differ from an ODE?",
+        "Why do numerical methods become necessary for many pricing problems?"
+      ]
+    },
+    {
+      "id": "day-33",
+      "number": 33,
+      "date": "2026-07-09",
+      "weekId": "week-5",
+      "files": [
+        "`M1-3\\JA261.3 Notes 1.pdf`",
+        "`M1-3\\JA261.3 Notes.zip`"
+      ],
+      "knowledge": [
+        "Supplementary derivations."
+      ],
+      "checklist": [
+        "[ ] Inspect supplementary notes.",
+        "[ ] Add missing formulas to your M1 formula sheet.",
+        "[ ] Explain one derivation step that was unclear."
+      ],
+      "masteryQuestions": [
+        "What does a derivation reveal that a final formula hides?",
+        "Which assumption is most important in the PDE setup?"
+      ]
+    },
+    {
+      "id": "day-34",
+      "number": 34,
+      "date": "2026-07-10",
+      "weekId": "week-5",
+      "files": [
+        "`M1-3\\JA261.3 Whiteboard.pdf` if available in notes/zip, otherwise review annotated notes."
+      ],
+      "knowledge": [
+        "Whiteboard intuition."
+      ],
+      "checklist": [
+        "[ ] Reconstruct the main argument from notes.",
+        "[ ] Draw a concept map: stochastic process -> density -> PDE -> price.",
+        "[ ] Write one Python visualisation of density evolution."
+      ],
+      "masteryQuestions": [
+        "How is probability conservation reflected in density evolution?",
+        "How does the pricing PDE connect to expected payoff?"
+      ]
+    },
+    {
+      "id": "day-35",
+      "number": 35,
+      "date": "2026-07-11",
+      "weekId": "week-5",
+      "files": [
+        "Review `M1-3`."
+      ],
+      "knowledge": [
+        "Weekly consolidation."
+      ],
+      "checklist": [
+        "[ ] Produce a one-page M1-3 summary.",
+        "[ ] Solve one exercise again from memory.",
+        "[ ] Mark topics to revisit before M3 numerical methods."
+      ],
+      "masteryQuestions": [
+        "What is the simplest explanation of why PDEs appear in option pricing?",
+        "What is still unclear about transition densities?"
+      ]
+    },
+    {
+      "id": "day-36",
+      "number": 36,
+      "date": "2026-07-12",
+      "weekId": "week-6",
+      "files": [
+        "`M1-4\\JA261.4 Notes.pdf`",
+        "`M1-4\\JA261.4 Annotated-1.pdf`"
+      ],
+      "knowledge": [
+        "Brownian motion, increments, quadratic variation."
+      ],
+      "checklist": [
+        "[ ] Read Brownian motion sections.",
+        "[ ] Simulate Brownian paths in Python.",
+        "[ ] Compare path roughness with ordinary smooth functions."
+      ],
+      "masteryQuestions": [
+        "What are the key properties of Brownian motion?",
+        "Why is Brownian motion not differentiable in the ordinary sense?"
+      ]
+    },
+    {
+      "id": "day-37",
+      "number": 37,
+      "date": "2026-07-13",
+      "weekId": "week-6",
+      "files": [
+        "`M1-4\\JA261.4 Notes.pdf`"
+      ],
+      "knowledge": [
+        "Ito's lemma and stochastic differential equations."
+      ],
+      "checklist": [
+        "[ ] Read Ito's lemma section.",
+        "[ ] Write the formula carefully in your notes.",
+        "[ ] Apply Ito's lemma to a simple function if covered in exercises."
+      ],
+      "masteryQuestions": [
+        "What extra term appears in Ito's lemma compared with ordinary calculus?",
+        "Why does quadratic variation matter?"
+      ]
+    },
+    {
+      "id": "day-38",
+      "number": 38,
+      "date": "2026-07-14",
+      "weekId": "week-6",
+      "files": [
+        "`M1-4\\JA261.4 Exercises.pdf`",
+        "`M1-4\\JA261.4 Solutions.zip`"
+      ],
+      "knowledge": [
+        "Stochastic calculus exercises."
+      ],
+      "checklist": [
+        "[ ] Attempt at least 2 exercises.",
+        "[ ] Compare with solutions after attempting.",
+        "[ ] Write one simulation that matches a theoretical property."
+      ],
+      "masteryQuestions": [
+        "What is an SDE?",
+        "What does it mean to simulate an SDE discretely?"
+      ]
+    },
+    {
+      "id": "day-39",
+      "number": 39,
+      "date": "2026-07-15",
+      "weekId": "week-6",
+      "files": [
+        "`M1-5\\JA261.5 Notes-1.pdf`"
+      ],
+      "knowledge": [
+        "Martingales, fair games, conditional expectation."
+      ],
+      "checklist": [
+        "[ ] Read martingale definition and examples.",
+        "[ ] Explain martingale in plain English.",
+        "[ ] Simulate a fair random walk and check average value over time."
+      ],
+      "masteryQuestions": [
+        "What is a martingale?",
+        "Why is conditional expectation central to martingales?"
+      ]
+    },
+    {
+      "id": "day-40",
+      "number": 40,
+      "date": "2026-07-16",
+      "weekId": "week-6",
+      "files": [
+        "`M1-5\\JA261.5 Notes-1.pdf`"
+      ],
+      "knowledge": [
+        "Martingales in option pricing."
+      ],
+      "checklist": [
+        "[ ] Read pricing-related martingale sections.",
+        "[ ] Connect discounted asset prices to martingales.",
+        "[ ] Write a short note on risk-neutral pricing."
+      ],
+      "masteryQuestions": [
+        "Why are discounted prices important in martingale pricing?",
+        "How does risk-neutral valuation simplify option pricing?"
+      ]
+    },
+    {
+      "id": "day-41",
+      "number": 41,
+      "date": "2026-07-17",
+      "weekId": "week-6",
+      "files": [
+        "`M1-5\\JA261.5 Exercises-1.pdf`",
+        "`M1-5\\JA261.5 Solutions-1.pdf`"
+      ],
+      "knowledge": [
+        "Martingale exercise practice."
+      ],
+      "checklist": [
+        "[ ] Attempt at least 3 exercises.",
+        "[ ] Compare with solutions.",
+        "[ ] Update M1 formula sheet."
+      ],
+      "masteryQuestions": [
+        "How can you check whether a process is a martingale?",
+        "What is the role of filtration?"
+      ]
+    },
+    {
+      "id": "day-42",
+      "number": 42,
+      "date": "2026-07-18",
+      "weekId": "week-6",
+      "files": [
+        "Review `M1-1` to `M1-5`."
+      ],
+      "knowledge": [
+        "M1 integration."
+      ],
+      "checklist": [
+        "[ ] Write a 2-page M1 summary.",
+        "[ ] Build one notebook containing random walk, Brownian motion, and binomial pricing.",
+        "[ ] List 5 assumptions behind the models."
+      ],
+      "masteryQuestions": [
+        "How do binomial models, Brownian motion, and martingales connect?",
+        "What would you need to review before starting Black-Scholes?"
+      ]
+    },
+    {
+      "id": "day-43",
+      "number": 43,
+      "date": "2026-07-19",
+      "weekId": "week-7",
+      "files": [
+        "`M2-1\\JA262.1 Notes.pdf`",
+        "`M2-1\\JA262.1 Annotated.pdf`"
+      ],
+      "knowledge": [
+        "Portfolio return, portfolio variance, diversification."
+      ],
+      "checklist": [
+        "[ ] Read portfolio management introduction.",
+        "[ ] Compute two-asset portfolio return and variance by hand.",
+        "[ ] Implement the same in Python."
+      ],
+      "masteryQuestions": [
+        "How does diversification reduce risk?",
+        "Why does covariance matter more than individual variance alone?"
+      ]
+    },
+    {
+      "id": "day-44",
+      "number": 44,
+      "date": "2026-07-20",
+      "weekId": "week-7",
+      "files": [
+        "`PythonLab\\JA26P3 Portfolio Optimisation\\5_portfolio_cvxpy.ipynb`"
+      ],
+      "knowledge": [
+        "Portfolio optimisation workflow, constraints, objective functions."
+      ],
+      "checklist": [
+        "[ ] Run or inspect the notebook.",
+        "[ ] Recreate the core optimisation setup.",
+        "[ ] Explain the objective and constraints."
+      ],
+      "masteryQuestions": [
+        "What is an objective function?",
+        "What is the difference between a constraint and a parameter?"
+      ]
+    },
+    {
+      "id": "day-45",
+      "number": 45,
+      "date": "2026-07-21",
+      "weekId": "week-7",
+      "files": [
+        "`M2-1\\JA262.1 Exercises.pdf`",
+        "`M2-1\\JA262.1 Solutions.pdf`"
+      ],
+      "knowledge": [
+        "Portfolio exercise practice."
+      ],
+      "checklist": [
+        "[ ] Attempt at least 3 exercises.",
+        "[ ] Verify one portfolio variance calculation in Python.",
+        "[ ] Add formulas to your M2 sheet."
+      ],
+      "masteryQuestions": [
+        "How do weights affect portfolio expected return?",
+        "What does a negative covariance imply for diversification?"
+      ]
+    },
+    {
+      "id": "day-46",
+      "number": 46,
+      "date": "2026-07-22",
+      "weekId": "week-7",
+      "files": [
+        "`M2-2\\JA262.2 Notes.pdf`",
+        "`M2-2\\JA262.2 Annotated.pdf`"
+      ],
+      "knowledge": [
+        "Fundamentals of optimisation.",
+        "Convexity, Lagrange intuition, numerical solvers."
+      ],
+      "checklist": [
+        "[ ] Read optimisation notes.",
+        "[ ] Define convex objective in your own words.",
+        "[ ] Write one constrained optimisation example."
+      ],
+      "masteryQuestions": [
+        "Why is convexity helpful in optimisation?",
+        "Why can constraints change the optimal portfolio dramatically?"
+      ]
+    },
+    {
+      "id": "day-47",
+      "number": 47,
+      "date": "2026-07-23",
+      "weekId": "week-7",
+      "files": [
+        "`M2-2\\JA262.2 Spreadsheet.xlsx`",
+        "`M2-2\\JA262.2 Exercises.pdf`"
+      ],
+      "knowledge": [
+        "Spreadsheet optimisation and exercise practice."
+      ],
+      "checklist": [
+        "[ ] Inspect spreadsheet inputs/outputs.",
+        "[ ] Attempt at least 2 exercises.",
+        "[ ] Recreate one spreadsheet result in Python."
+      ],
+      "masteryQuestions": [
+        "What are the risks of relying only on spreadsheet optimisation?",
+        "How would you validate an optimiser's output?"
+      ]
+    },
+    {
+      "id": "day-48",
+      "number": 48,
+      "date": "2026-07-24",
+      "weekId": "week-7",
+      "files": [
+        "`M2-2\\JA262.2 Solutions.pdf`",
+        "`PythonLab\\JA26P3 Portfolio Optimisation\\5_portfolio_cvxpy.ipynb`"
+      ],
+      "knowledge": [
+        "Debugging portfolio optimisation."
+      ],
+      "checklist": [
+        "[ ] Compare your exercise answers with solutions.",
+        "[ ] Build a function that returns optimal weights.",
+        "[ ] Test long-only and fully-invested constraints."
+      ],
+      "masteryQuestions": [
+        "What does a long-only constraint mean?",
+        "Why should portfolio weights usually sum to one?"
+      ]
+    },
+    {
+      "id": "day-49",
+      "number": 49,
+      "date": "2026-07-25",
+      "weekId": "week-7",
+      "files": [
+        "Review `M2-1`, `M2-2`, `PythonLab\\P3`."
+      ],
+      "knowledge": [
+        "Weekly portfolio mini project."
+      ],
+      "checklist": [
+        "[ ] Build a 3-asset portfolio notebook.",
+        "[ ] Output expected return, volatility, Sharpe ratio, and weights.",
+        "[ ] Write a short interpretation of the selected portfolio."
+      ],
+      "masteryQuestions": [
+        "What makes an efficient portfolio efficient?",
+        "What would change if transaction costs were included?"
+      ]
+    },
+    {
+      "id": "day-50",
+      "number": 50,
+      "date": "2026-07-26",
+      "weekId": "week-8",
+      "files": [
+        "`M2-3\\JA262.3 Notes.pdf`",
+        "`M2-3\\JA262.3 Additional Notes.pdf`",
+        "`M2-3\\JA262.3 SPX.csv` if available, otherwise `M1-1\\JA261.1 SPX.csv`"
+      ],
+      "knowledge": [
+        "Asset returns, stylised facts, fat tails, skewness, kurtosis."
+      ],
+      "checklist": [
+        "[ ] Read notes on empirical return behaviour.",
+        "[ ] Compute skewness and kurtosis for SPX returns.",
+        "[ ] Plot return histogram and comment on tails."
+      ],
+      "masteryQuestions": [
+        "What are stylised facts of asset returns?",
+        "Why are fat tails important for risk management?"
+      ]
+    },
+    {
+      "id": "day-51",
+      "number": 51,
+      "date": "2026-07-27",
+      "weekId": "week-8",
+      "files": [
+        "`M2-3\\JA262.3 Exercises.pdf`",
+        "`M2-3\\JA262.3 Solutions.pdf`"
+      ],
+      "knowledge": [
+        "Asset return exercise practice."
+      ],
+      "checklist": [
+        "[ ] Attempt at least 2 exercises.",
+        "[ ] Compare your answer with solutions.",
+        "[ ] Add skewness/kurtosis notes to formula sheet."
+      ],
+      "masteryQuestions": [
+        "What does positive skewness indicate?",
+        "What does excess kurtosis indicate?"
+      ]
+    },
+    {
+      "id": "day-52",
+      "number": 52,
+      "date": "2026-07-28",
+      "weekId": "week-8",
+      "files": [
+        "`M2-4\\JA262.4 Notes.pdf`",
+        "`Tutorials\\JA26T3 Statistical Essentials for VaR & ES\\1 DISTRIBUTION PACK 26JUT3\\AN SOL Market Risk.pdf`"
+      ],
+      "knowledge": [
+        "Value at Risk, Expected Shortfall, confidence levels."
+      ],
+      "checklist": [
+        "[ ] Read VaR/ES definitions.",
+        "[ ] Compute historical VaR and ES from returns.",
+        "[ ] Compare 95% and 99% risk measures."
+      ],
+      "masteryQuestions": [
+        "What does 99% VaR mean?",
+        "Why is Expected Shortfall often preferred to VaR?"
+      ]
+    },
+    {
+      "id": "day-53",
+      "number": 53,
+      "date": "2026-07-29",
+      "weekId": "week-8",
+      "files": [
+        "`PythonLab\\JA26P4 Value at Risk & GARCH\\6_riskanalytics.ipynb`"
+      ],
+      "knowledge": [
+        "Python risk analytics workflow."
+      ],
+      "checklist": [
+        "[ ] Run or inspect risk analytics notebook.",
+        "[ ] Recreate historical VaR and parametric VaR.",
+        "[ ] Write one function `historical_var(returns, alpha)`."
+      ],
+      "masteryQuestions": [
+        "What assumption does parametric VaR usually make?",
+        "How does historical VaR avoid distributional assumptions?"
+      ]
+    },
+    {
+      "id": "day-54",
+      "number": 54,
+      "date": "2026-07-30",
+      "weekId": "week-8",
+      "files": [
+        "`M2-5\\JA262.5 Notes.pdf`",
+        "`PythonLab\\JA26P4 Value at Risk & GARCH\\7_garch.ipynb`"
+      ],
+      "knowledge": [
+        "ARCH/GARCH, volatility clustering, conditional variance."
+      ],
+      "checklist": [
+        "[ ] Read GARCH notes.",
+        "[ ] Inspect the GARCH notebook workflow.",
+        "[ ] Explain volatility clustering using a return chart."
+      ],
+      "masteryQuestions": [
+        "What problem does GARCH try to solve?",
+        "What is conditional volatility?"
+      ]
+    },
+    {
+      "id": "day-55",
+      "number": 55,
+      "date": "2026-07-31",
+      "weekId": "week-8",
+      "files": [
+        "`M2-4\\JA262.4 Exercise.pdf`",
+        "`M2-4\\JA262.4 Solutions.pdf`",
+        "`M2-5\\JA262.5 Exercise.pdf`",
+        "`M2-5\\JA262.5 Solutions.pdf`"
+      ],
+      "knowledge": [
+        "VaR/ES and GARCH exercise practice."
+      ],
+      "checklist": [
+        "[ ] Attempt 2 VaR/ES exercises.",
+        "[ ] Attempt 1 GARCH-related exercise.",
+        "[ ] Compare with solutions and document mistakes."
+      ],
+      "masteryQuestions": [
+        "Why can VaR underestimate losses during stressed markets?",
+        "Why is volatility forecasting useful for risk control?"
+      ]
+    },
+    {
+      "id": "day-56",
+      "number": 56,
+      "date": "2026-08-01",
+      "weekId": "week-8",
+      "files": [
+        "Review `M2-3`, `M2-4`, `M2-5`, `PythonLab\\P4`."
+      ],
+      "knowledge": [
+        "Risk mini project."
+      ],
+      "checklist": [
+        "[ ] Build a notebook that calculates VaR, ES, skewness, kurtosis, and rolling volatility.",
+        "[ ] Add a chart showing volatility clustering.",
+        "[ ] Write a short risk report in English."
+      ],
+      "masteryQuestions": [
+        "How would you explain VaR to a portfolio manager?",
+        "What are two limitations of VaR?"
+      ]
+    },
+    {
+      "id": "day-57",
+      "number": 57,
+      "date": "2026-08-02",
+      "weekId": "week-9",
+      "files": [
+        "`M2-6\\JA262.6 Notes.pdf`"
+      ],
+      "knowledge": [
+        "Risk regulation, Basel III/IV, capital, risk controls."
+      ],
+      "checklist": [
+        "[ ] Read regulatory risk notes.",
+        "[ ] Summarise Basel risk motivation in 10 bullet points.",
+        "[ ] Create a glossary: capital, exposure, margin, default."
+      ],
+      "masteryQuestions": [
+        "Why do regulators require financial institutions to hold capital?",
+        "What is model risk in a regulatory context?"
+      ]
+    },
+    {
+      "id": "day-58",
+      "number": 58,
+      "date": "2026-08-03",
+      "weekId": "week-9",
+      "files": [
+        "`M2-6\\JA262.6 Exercise.pdf`",
+        "`M2-6\\JA262.6 Solutions.pdf`"
+      ],
+      "knowledge": [
+        "Regulatory exercise practice."
+      ],
+      "checklist": [
+        "[ ] Attempt at least 2 exercises.",
+        "[ ] Compare with solutions.",
+        "[ ] Add mistakes to your review log."
+      ],
+      "masteryQuestions": [
+        "What is the difference between market risk and credit risk?",
+        "Why can regulation change trading behaviour?"
+      ]
+    },
+    {
+      "id": "day-59",
+      "number": 59,
+      "date": "2026-08-04",
+      "weekId": "week-9",
+      "files": [
+        "`M2-7\\JA262.7 Notes.pdf`"
+      ],
+      "knowledge": [
+        "Collateral, margins, compression, initial margin."
+      ],
+      "checklist": [
+        "[ ] Read collateral and margin notes.",
+        "[ ] Define initial margin and variation margin.",
+        "[ ] Sketch the lifecycle of a margined trade."
+      ],
+      "masteryQuestions": [
+        "What is the difference between initial margin and variation margin?",
+        "Why does collateral reduce counterparty risk?"
+      ]
+    },
+    {
+      "id": "day-60",
+      "number": 60,
+      "date": "2026-08-05",
+      "weekId": "week-9",
+      "files": [
+        "`M2-7\\JA262.7 Exercise.pdf`",
+        "`M2-7\\JA262.7 Solutions.pdf`",
+        "`M2-7\\JA262.7 Excel_SIMM and IM.xlsm`"
+      ],
+      "knowledge": [
+        "Margin exercise and spreadsheet inspection."
+      ],
+      "checklist": [
+        "[ ] Attempt at least 2 exercises.",
+        "[ ] Inspect the SIMM/IM spreadsheet logic.",
+        "[ ] Translate one spreadsheet calculation into notes."
+      ],
+      "masteryQuestions": [
+        "What is the purpose of initial margin?",
+        "How does netting affect exposure?"
+      ]
+    },
+    {
+      "id": "day-61",
+      "number": 61,
+      "date": "2026-08-06",
+      "weekId": "week-9",
+      "files": [
+        "`Exam 1\\E1_261C Task Paper-1.pdf`",
+        "`Exam 1\\Task1_Solution_Guide.pdf`"
+      ],
+      "knowledge": [
+        "Exam 1 format and expected analytical depth."
+      ],
+      "checklist": [
+        "[ ] Read the task paper without solving fully.",
+        "[ ] Identify which M1/M2 topics are tested.",
+        "[ ] Outline a solution approach."
+      ],
+      "masteryQuestions": [
+        "What are the main quantitative skills required by the exam task?",
+        "What evidence would make your solution convincing?"
+      ]
+    },
+    {
+      "id": "day-62",
+      "number": 62,
+      "date": "2026-08-07",
+      "weekId": "week-9",
+      "files": [
+        "`Exam 1\\Indices_Download_2026.xlsx`",
+        "`Exam 1\\Task1_Solution_Guide.pdf`"
+      ],
+      "knowledge": [
+        "Data-based exam workflow."
+      ],
+      "checklist": [
+        "[ ] Inspect the Excel data.",
+        "[ ] Recreate one part of the solution guide in Python.",
+        "[ ] Write down how you would improve the analysis."
+      ],
+      "masteryQuestions": [
+        "How should you validate an index data file before analysis?",
+        "Why is interpretation as important as numerical output?"
+      ]
+    },
+    {
+      "id": "day-63",
+      "number": 63,
+      "date": "2026-08-08",
+      "weekId": "week-9",
+      "files": [
+        "Review all `M2-*` files."
+      ],
+      "knowledge": [
+        "M2 integration."
+      ],
+      "checklist": [
+        "[ ] Produce a risk dashboard notebook.",
+        "[ ] Include portfolio stats, VaR, ES, rolling volatility, and a short commentary.",
+        "[ ] Save this as your M2 mini project."
+      ],
+      "masteryQuestions": [
+        "How do portfolio optimisation and risk measurement complement each other?",
+        "What would you present to a risk committee?"
+      ]
+    },
+    {
+      "id": "day-64",
+      "number": 64,
+      "date": "2026-08-09",
+      "weekId": "week-10",
+      "files": [
+        "`M3-1\\JA263.1 Notes.pdf`",
+        "`M3-1\\JA263.1 Annotated.pdf`"
+      ],
+      "knowledge": [
+        "Black-Scholes model assumptions and setup."
+      ],
+      "checklist": [
+        "[ ] Read Black-Scholes introduction.",
+        "[ ] List all assumptions.",
+        "[ ] Explain why lognormal prices are used."
+      ],
+      "masteryQuestions": [
+        "What are the main assumptions of the Black-Scholes model?",
+        "Why is the underlying asset often modelled as lognormal?"
+      ]
+    },
+    {
+      "id": "day-65",
+      "number": 65,
+      "date": "2026-08-10",
+      "weekId": "week-10",
+      "files": [
+        "`M3-1\\JA263.1 Notes.pdf`",
+        "`PythonLab\\JA26P5 Black Scholes Option Pricing\\8_blackscholes.ipynb`"
+      ],
+      "knowledge": [
+        "Black-Scholes formula and implementation."
+      ],
+      "checklist": [
+        "[ ] Write the call and put formulas.",
+        "[ ] Implement `bs_call()` and `bs_put()` in Python.",
+        "[ ] Compare your output with the notebook."
+      ],
+      "masteryQuestions": [
+        "What do d1 and d2 represent in the Black-Scholes formula?",
+        "Why does volatility increase the value of many options?"
+      ]
+    },
+    {
+      "id": "day-66",
+      "number": 66,
+      "date": "2026-08-11",
+      "weekId": "week-10",
+      "files": [
+        "`M3-1\\JA263.1 Exercises.pdf`",
+        "`M3-1\\JA263.1 Solutions.pdf`"
+      ],
+      "knowledge": [
+        "Black-Scholes exercise practice."
+      ],
+      "checklist": [
+        "[ ] Attempt at least 3 exercises.",
+        "[ ] Verify one result with your Python function.",
+        "[ ] Add formula details to your M3 sheet."
+      ],
+      "masteryQuestions": [
+        "How does put-call parity relate call and put prices?",
+        "How would you test a Black-Scholes implementation?"
+      ]
+    },
+    {
+      "id": "day-67",
+      "number": 67,
+      "date": "2026-08-12",
+      "weekId": "week-10",
+      "files": [
+        "`M3-2\\JA263.2 Notes_v2.pdf`",
+        "`M3-2\\JA263.2 Changing Probability Measure.pdf`"
+      ],
+      "knowledge": [
+        "Martingale theory and change of measure in option pricing."
+      ],
+      "checklist": [
+        "[ ] Read probability measure change notes.",
+        "[ ] Explain real-world versus risk-neutral measure.",
+        "[ ] Write a diagram connecting payoff, expectation, discounting."
+      ],
+      "masteryQuestions": [
+        "What is a change of measure?",
+        "Why is risk-neutral pricing useful even if investors are risk-averse?"
+      ]
+    },
+    {
+      "id": "day-68",
+      "number": 68,
+      "date": "2026-08-13",
+      "weekId": "week-10",
+      "files": [
+        "`M3-2\\JA263.2 Exercises.pdf`",
+        "`M3-2\\JA263.2 Solutions.pdf`"
+      ],
+      "knowledge": [
+        "Martingale pricing exercises."
+      ],
+      "checklist": [
+        "[ ] Attempt at least 2 exercises.",
+        "[ ] Compare with solutions.",
+        "[ ] Explain one mistake in writing."
+      ],
+      "masteryQuestions": [
+        "What makes a discounted asset price a martingale under the risk-neutral measure?",
+        "What is the difference between pricing and forecasting?"
+      ]
+    },
+    {
+      "id": "day-69",
+      "number": 69,
+      "date": "2026-08-14",
+      "weekId": "week-10",
+      "files": [
+        "`M3-3\\JA263.3 Notes.pdf`",
+        "`M3-3\\JA263.3 Annotated.pdf`"
+      ],
+      "knowledge": [
+        "Connecting pricing models and assumptions."
+      ],
+      "checklist": [
+        "[ ] Read model connection notes.",
+        "[ ] Build a concept map: binomial -> Black-Scholes -> martingale pricing.",
+        "[ ] Compare binomial and BS prices for one option."
+      ],
+      "masteryQuestions": [
+        "How does the binomial model approximate Black-Scholes?",
+        "Why should every pricing model be checked against its assumptions?"
+      ]
+    },
+    {
+      "id": "day-70",
+      "number": 70,
+      "date": "2026-08-15",
+      "weekId": "week-10",
+      "files": [
+        "Review `M3-1` to `M3-3`, `PythonLab\\P5`."
+      ],
+      "knowledge": [
+        "BS mini project."
+      ],
+      "checklist": [
+        "[ ] Build a notebook with BS call/put, Greeks if available, and put-call parity check.",
+        "[ ] Compare BS and binomial prices.",
+        "[ ] Write a short model limitations section."
+      ],
+      "masteryQuestions": [
+        "What practical market feature violates Black-Scholes assumptions?",
+        "How would you explain option Delta to a trader?"
+      ]
+    },
+    {
+      "id": "day-71",
+      "number": 71,
+      "date": "2026-08-16",
+      "weekId": "week-11",
+      "files": [
+        "`M3-4\\JA263.4 Notes.pdf`",
+        "`M3-4\\JA263.4 Annotated.pdf`"
+      ],
+      "knowledge": [
+        "Introduction to numerical methods, approximation error."
+      ],
+      "checklist": [
+        "[ ] Read numerical methods introduction.",
+        "[ ] Define discretisation error and convergence.",
+        "[ ] Implement a simple numerical approximation example."
+      ],
+      "masteryQuestions": [
+        "Why are numerical methods necessary in finance?",
+        "What is convergence?"
+      ]
+    },
+    {
+      "id": "day-72",
+      "number": 72,
+      "date": "2026-08-17",
+      "weekId": "week-11",
+      "files": [
+        "`PythonLab\\JA26P6 Monte Carlo Simulation\\9_montecarlo.ipynb`"
+      ],
+      "knowledge": [
+        "Monte Carlo pricing, random sampling, standard error."
+      ],
+      "checklist": [
+        "[ ] Run or inspect Monte Carlo notebook.",
+        "[ ] Implement Monte Carlo pricing for a European call.",
+        "[ ] Compare with Black-Scholes price."
+      ],
+      "masteryQuestions": [
+        "Why does Monte Carlo error decrease slowly?",
+        "What is the standard error of a simulation estimate?"
+      ]
+    },
+    {
+      "id": "day-73",
+      "number": 73,
+      "date": "2026-08-18",
+      "weekId": "week-11",
+      "files": [
+        "`M3-4\\JA263.4 Exercises.pdf`",
+        "`M3-4\\JA263.4 Solutions.pdf`"
+      ],
+      "knowledge": [
+        "Numerical method exercise practice."
+      ],
+      "checklist": [
+        "[ ] Attempt at least 2 exercises.",
+        "[ ] Use Python to verify one numerical result.",
+        "[ ] Add error/convergence notes."
+      ],
+      "masteryQuestions": [
+        "What is the trade-off between accuracy and computation time?",
+        "How can you detect that a numerical method is unstable?"
+      ]
+    },
+    {
+      "id": "day-74",
+      "number": 74,
+      "date": "2026-08-19",
+      "weekId": "week-11",
+      "files": [
+        "`M3-5\\JA263.5 Notes.pdf`",
+        "`M3-5\\JA263.5 Excel_sims.xlsx`"
+      ],
+      "knowledge": [
+        "Further numerical methods and simulation examples."
+      ],
+      "checklist": [
+        "[ ] Read notes and inspect spreadsheet simulations.",
+        "[ ] Recreate one spreadsheet simulation in Python.",
+        "[ ] Add a chart showing convergence with number of paths."
+      ],
+      "masteryQuestions": [
+        "Why should simulation results be reproducible?",
+        "What is the role of a random seed?"
+      ]
+    },
+    {
+      "id": "day-75",
+      "number": 75,
+      "date": "2026-08-20",
+      "weekId": "week-11",
+      "files": [
+        "`M3-5\\JA263.5 Exercises.pdf`",
+        "`M3-5\\JA263.5 Solutions.pdf`"
+      ],
+      "knowledge": [
+        "Monte Carlo and numerical exercise practice."
+      ],
+      "checklist": [
+        "[ ] Attempt at least 2 exercises.",
+        "[ ] Compare with solutions.",
+        "[ ] Improve your Monte Carlo function with seed and path count inputs."
+      ],
+      "masteryQuestions": [
+        "How would you price a payoff that has no closed-form solution?",
+        "Why is path dependency natural for Monte Carlo?"
+      ]
+    },
+    {
+      "id": "day-76",
+      "number": 76,
+      "date": "2026-08-21",
+      "weekId": "week-11",
+      "files": [
+        "`M3-6\\JA263.6 Notes.pdf`",
+        "`M3-6\\JA263.6 Exercises and Solutions_Linear Systems.pdf`"
+      ],
+      "knowledge": [
+        "Linear systems, matrix solving, numerical stability."
+      ],
+      "checklist": [
+        "[ ] Read linear systems material.",
+        "[ ] Solve a small linear system by hand and with NumPy.",
+        "[ ] Explain why matrix solvers matter for FDM."
+      ],
+      "masteryQuestions": [
+        "What is a linear system?",
+        "Why should we avoid explicitly computing a matrix inverse when solving systems?"
+      ]
+    },
+    {
+      "id": "day-77",
+      "number": 77,
+      "date": "2026-08-22",
+      "weekId": "week-11",
+      "files": [
+        "Review `M3-4` to `M3-6`, `PythonLab\\P6`."
+      ],
+      "knowledge": [
+        "Monte Carlo mini project."
+      ],
+      "checklist": [
+        "[ ] Build a notebook comparing BS price and MC price across path counts.",
+        "[ ] Plot error versus number of paths.",
+        "[ ] Write a conclusion about convergence."
+      ],
+      "masteryQuestions": [
+        "What determines whether Monte Carlo is a good method for a pricing problem?",
+        "How would you reduce Monte Carlo variance?"
+      ]
+    },
+    {
+      "id": "day-78",
+      "number": 78,
+      "date": "2026-08-23",
+      "weekId": "week-12",
+      "files": [
+        "`M3-7\\JA263.7 Notes.pdf`",
+        "`PythonLab\\JA26P7 Finite Difference Methods\\10_finitedifference.ipynb`"
+      ],
+      "knowledge": [
+        "Finite difference grids, explicit/implicit intuition."
+      ],
+      "checklist": [
+        "[ ] Read FDM notes.",
+        "[ ] Inspect the notebook grid setup.",
+        "[ ] Draw a time-price grid and label boundary/terminal conditions."
+      ],
+      "masteryQuestions": [
+        "What is a finite difference grid?",
+        "Why do boundary conditions matter in FDM?"
+      ]
+    },
+    {
+      "id": "day-79",
+      "number": 79,
+      "date": "2026-08-24",
+      "weekId": "week-12",
+      "files": [
+        "`PythonLab\\JA26P7 Finite Difference Methods\\10_finitedifference.ipynb`"
+      ],
+      "knowledge": [
+        "FDM implementation details."
+      ],
+      "checklist": [
+        "[ ] Recreate the simplest FDM calculation.",
+        "[ ] Identify time step, price step, terminal payoff.",
+        "[ ] Compare FDM result with BS price if possible."
+      ],
+      "masteryQuestions": [
+        "What is the difference between terminal and boundary conditions?",
+        "What can cause an explicit finite difference scheme to become unstable?"
+      ]
+    },
+    {
+      "id": "day-80",
+      "number": 80,
+      "date": "2026-08-25",
+      "weekId": "week-12",
+      "files": [
+        "`M3-8\\JA263.8 Notes.pdf`",
+        "`M3-8\\JA263.8 Annotated.pdf`"
+      ],
+      "knowledge": [
+        "Exotic options, payoff structure, path dependency."
+      ],
+      "checklist": [
+        "[ ] Read exotic options notes.",
+        "[ ] List at least 5 exotic payoff types.",
+        "[ ] Implement one simple exotic payoff function."
+      ],
+      "masteryQuestions": [
+        "What makes an option exotic?",
+        "Why are exotic options often harder to price than vanilla options?"
+      ]
+    },
+    {
+      "id": "day-81",
+      "number": 81,
+      "date": "2026-08-26",
+      "weekId": "week-12",
+      "files": [
+        "`M3-9\\JA263.9 Notes.pdf`",
+        "`M3-9\\JA263.9 Annotated.pdf`"
+      ],
+      "knowledge": [
+        "Understanding volatility, realised volatility, implied volatility."
+      ],
+      "checklist": [
+        "[ ] Read volatility notes.",
+        "[ ] Compute realised volatility from a return series.",
+        "[ ] Explain realised versus implied volatility."
+      ],
+      "masteryQuestions": [
+        "What is the difference between realised volatility and implied volatility?",
+        "Why is volatility central to option pricing?"
+      ]
+    },
+    {
+      "id": "day-82",
+      "number": 82,
+      "date": "2026-08-27",
+      "weekId": "week-12",
+      "files": [
+        "`PythonLab\\JA26P8 Implied Volatility\\11_impliedvolatility.ipynb`"
+      ],
+      "knowledge": [
+        "Implied volatility solver, root finding."
+      ],
+      "checklist": [
+        "[ ] Run or inspect the IV notebook.",
+        "[ ] Implement an implied volatility solver.",
+        "[ ] Test it by pricing with BS and solving back for volatility."
+      ],
+      "masteryQuestions": [
+        "Why is implied volatility found through numerical root solving?",
+        "What can go wrong in an implied volatility solver?"
+      ]
+    },
+    {
+      "id": "day-83",
+      "number": 83,
+      "date": "2026-08-28",
+      "weekId": "week-12",
+      "files": [
+        "`M3-8\\JA263.8 Whiteboard.pdf`",
+        "`M3-9\\JA263.9 Whiteboard.pdf`"
+      ],
+      "knowledge": [
+        "Conceptual reinforcement."
+      ],
+      "checklist": [
+        "[ ] Review whiteboard materials.",
+        "[ ] Add volatility and exotic option concepts to M3 summary.",
+        "[ ] Explain one exotic option pricing approach."
+      ],
+      "masteryQuestions": [
+        "Which pricing method would you choose for a path-dependent payoff, and why?",
+        "What information does an implied volatility surface contain?"
+      ]
+    },
+    {
+      "id": "day-84",
+      "number": 84,
+      "date": "2026-08-29",
+      "weekId": "week-12",
+      "files": [
+        "Review `M3-7` to `M3-9`, `PythonLab\\P7\\P8`."
+      ],
+      "knowledge": [
+        "FDM and volatility integration."
+      ],
+      "checklist": [
+        "[ ] Build a notebook with realised vol, BS price, implied vol recovery.",
+        "[ ] Add one FDM or exotic payoff experiment.",
+        "[ ] Write model limitations."
+      ],
+      "masteryQuestions": [
+        "Why are numerical methods essential for real-world options?",
+        "What would you check before trusting an implied volatility result?"
+      ]
+    },
+    {
+      "id": "day-85",
+      "number": 85,
+      "date": "2026-08-30",
+      "weekId": "week-13",
+      "files": [
+        "`M3-10\\JA263.10 Notes.pdf`",
+        "`M3-10\\JA263.10 Exercises.pdf`"
+      ],
+      "knowledge": [
+        "Advanced volatility modelling in complete markets."
+      ],
+      "checklist": [
+        "[ ] Read the notes.",
+        "[ ] Identify model assumptions and pricing implications.",
+        "[ ] Attempt at least 1 exercise."
+      ],
+      "masteryQuestions": [
+        "What does market completeness mean?",
+        "Why does volatility modelling become more complex in practice?"
+      ]
+    },
+    {
+      "id": "day-86",
+      "number": 86,
+      "date": "2026-08-31",
+      "weekId": "week-13",
+      "files": [
+        "`M3-10\\JA263.10 Solutions.pdf`"
+      ],
+      "knowledge": [
+        "Advanced volatility exercise review."
+      ],
+      "checklist": [
+        "[ ] Compare your exercise attempt with solutions.",
+        "[ ] Update your M3 formula sheet.",
+        "[ ] Write one paragraph on complete versus incomplete markets."
+      ],
+      "masteryQuestions": [
+        "How can model assumptions affect hedging?",
+        "Why is calibration important for volatility models?"
+      ]
+    },
+    {
+      "id": "day-87",
+      "number": 87,
+      "date": "2026-09-01",
+      "weekId": "week-13",
+      "files": [
+        "`M3-11\\JA263.11 Notes Part 1.pdf`",
+        "`M3-11\\JA263.11 Additional notes part 1.pdf`"
+      ],
+      "knowledge": [
+        "FX options, foreign/domestic rates, currency payoffs."
+      ],
+      "checklist": [
+        "[ ] Read Part 1 notes.",
+        "[ ] Define domestic rate, foreign rate, spot FX, forward FX.",
+        "[ ] Write the FX option pricing inputs."
+      ],
+      "masteryQuestions": [
+        "How does FX option pricing differ from equity option pricing?",
+        "Why are there two interest rates in FX option pricing?"
+      ]
+    },
+    {
+      "id": "day-88",
+      "number": 88,
+      "date": "2026-09-02",
+      "weekId": "week-13",
+      "files": [
+        "`M3-11\\JA263.11 Notes Part 2.pdf`",
+        "`M3-11\\JA263.11 Additional notes part 2.pdf`"
+      ],
+      "knowledge": [
+        "FX option pricing continuation."
+      ],
+      "checklist": [
+        "[ ] Read Part 2 notes.",
+        "[ ] Implement a simple Garman-Kohlhagen style formula if covered.",
+        "[ ] Compare structure with Black-Scholes."
+      ],
+      "masteryQuestions": [
+        "What role does the foreign interest rate play in FX option pricing?",
+        "How would you test an FX option pricing function?"
+      ]
+    },
+    {
+      "id": "day-89",
+      "number": 89,
+      "date": "2026-09-03",
+      "weekId": "week-13",
+      "files": [
+        "Review `PythonLab\\P5\\P6\\P7\\P8`."
+      ],
+      "knowledge": [
+        "Option pricing library design."
+      ],
+      "checklist": [
+        "[ ] Create project folder `My_CQF_Practice\\projects\\option_pricing_library`.",
+        "[ ] Define functions needed: BS, binomial, MC, IV.",
+        "[ ] Start a clean notebook demonstrating each function."
+      ],
+      "masteryQuestions": [
+        "What functions should a minimal option pricing library contain?",
+        "Why should pricing code separate model inputs from payoff definitions?"
+      ]
+    },
+    {
+      "id": "day-90",
+      "number": 90,
+      "date": "2026-09-04",
+      "weekId": "week-13",
+      "files": [
+        "Review all `M3-*` notes and exercises."
+      ],
+      "knowledge": [
+        "Project implementation."
+      ],
+      "checklist": [
+        "[ ] Implement or clean up BS, binomial, MC, and IV functions.",
+        "[ ] Add at least 5 test cases.",
+        "[ ] Compare methods on the same option."
+      ],
+      "masteryQuestions": [
+        "How can put-call parity be used as a test?",
+        "How would you identify a bug in a Monte Carlo pricer?"
+      ]
+    },
+    {
+      "id": "day-91",
+      "number": 91,
+      "date": "2026-09-05",
+      "weekId": "week-13",
+      "files": [
+        "Project notebook."
+      ],
+      "knowledge": [
+        "M3 project finalisation."
+      ],
+      "checklist": [
+        "[ ] Finalise your option pricing mini library.",
+        "[ ] Add charts: MC convergence, price versus volatility, IV recovery.",
+        "[ ] Write a final English summary of findings."
+      ],
+      "masteryQuestions": [
+        "Which pricing method is most flexible, and why?",
+        "Which pricing method is fastest for vanilla options, and why?"
+      ]
+    },
+    {
+      "id": "day-92",
+      "number": 92,
+      "date": "2026-09-06",
+      "weekId": "week-14",
+      "files": [
+        "`M4-1\\JA264.1 Notes.zip`",
+        "`M4-1\\JA264.1 Annotated.zip`",
+        "`M4-1\\JA264.1 Exercises.pdf`"
+      ],
+      "knowledge": [
+        "ML problem types, features, labels, overfitting."
+      ],
+      "checklist": [
+        "[ ] Extract or inspect notes zip.",
+        "[ ] Define feature, label, model, loss, overfitting.",
+        "[ ] Attempt 1 introductory exercise."
+      ],
+      "masteryQuestions": [
+        "What is the difference between a feature and a label?",
+        "What is overfitting?"
+      ]
+    },
+    {
+      "id": "day-93",
+      "number": 93,
+      "date": "2026-09-07",
+      "weekId": "week-14",
+      "files": [
+        "`M4-2\\JA264.2 Notes.zip`",
+        "`M4-2\\JA264.2 Whiteboard.pdf`"
+      ],
+      "knowledge": [
+        "Maths toolbox for ML, vectors, gradients, optimisation."
+      ],
+      "checklist": [
+        "[ ] Read or inspect notes.",
+        "[ ] Review gradient descent intuition.",
+        "[ ] Implement a simple loss curve in Python."
+      ],
+      "masteryQuestions": [
+        "What is a loss function?",
+        "Why is optimisation central to machine learning?"
+      ]
+    },
+    {
+      "id": "day-94",
+      "number": 94,
+      "date": "2026-09-08",
+      "weekId": "week-14",
+      "files": [
+        "`PythonLab\\JA26P9 Introduction to Machine Learning  using Scikit-learn\\12_linearregression_ks.ipynb`"
+      ],
+      "knowledge": [
+        "Scikit-learn workflow, linear regression."
+      ],
+      "checklist": [
+        "[ ] Run or inspect the notebook.",
+        "[ ] Recreate train/test split and model fitting.",
+        "[ ] Report RMSE or R-squared."
+      ],
+      "masteryQuestions": [
+        "What are the standard steps in a scikit-learn modelling workflow?",
+        "Why do we split data into training and test sets?"
+      ]
+    },
+    {
+      "id": "day-95",
+      "number": 95,
+      "date": "2026-09-09",
+      "weekId": "week-14",
+      "files": [
+        "`M4-2\\JA264.2 Exercises.pdf`",
+        "`M4-2\\JA264.2 Solutions.pdf`"
+      ],
+      "knowledge": [
+        "ML maths exercise practice."
+      ],
+      "checklist": [
+        "[ ] Attempt at least 2 exercises.",
+        "[ ] Compare with solutions.",
+        "[ ] Update ML formula and concept sheet."
+      ],
+      "masteryQuestions": [
+        "How does regularisation help reduce overfitting?",
+        "What is the difference between model bias and model variance?"
+      ]
+    },
+    {
+      "id": "day-96",
+      "number": 96,
+      "date": "2026-09-10",
+      "weekId": "week-14",
+      "files": [
+        "`M4-3\\JA264.3 Notes.pdf`",
+        "`M4-3\\JA264.3 Exercise.pdf`"
+      ],
+      "knowledge": [
+        "Supervised learning I."
+      ],
+      "checklist": [
+        "[ ] Read supervised learning notes.",
+        "[ ] Identify regression versus classification examples in finance.",
+        "[ ] Attempt 1 exercise."
+      ],
+      "masteryQuestions": [
+        "What is supervised learning?",
+        "Give one financial example of regression and one of classification."
+      ]
+    },
+    {
+      "id": "day-97",
+      "number": 97,
+      "date": "2026-09-11",
+      "weekId": "week-14",
+      "files": [
+        "`M4-3\\JA264.3 Solutions.pdf`",
+        "`PythonLab\\P9` notebook."
+      ],
+      "knowledge": [
+        "Model evaluation."
+      ],
+      "checklist": [
+        "[ ] Review exercise solutions.",
+        "[ ] Add evaluation metrics to your regression notebook.",
+        "[ ] Explain whether the model is useful or not."
+      ],
+      "masteryQuestions": [
+        "Why can a high in-sample score be misleading?",
+        "What metric would you use for a regression model and why?"
+      ]
+    },
+    {
+      "id": "day-98",
+      "number": 98,
+      "date": "2026-09-12",
+      "weekId": "week-14",
+      "files": [
+        "Review `M4-1` to `M4-3`, `PythonLab\\P9`."
+      ],
+      "knowledge": [
+        "ML foundation mini project."
+      ],
+      "checklist": [
+        "[ ] Build a small regression notebook from scratch.",
+        "[ ] Include data preparation, train/test split, model, metrics, chart.",
+        "[ ] Write a short model risk note."
+      ],
+      "masteryQuestions": [
+        "What are three ways a financial ML model can fail?",
+        "Why is out-of-sample testing essential?"
+      ]
+    },
+    {
+      "id": "day-99",
+      "number": 99,
+      "date": "2026-09-13",
+      "weekId": "week-15",
+      "files": [
+        "`M4-4\\JA264.4 Notes.pdf`",
+        "`M4-4\\JA264.4 Annotated.pdf`"
+      ],
+      "knowledge": [
+        "Supervised learning II, classification, metrics."
+      ],
+      "checklist": [
+        "[ ] Read classification sections.",
+        "[ ] Define accuracy, precision, recall, confusion matrix.",
+        "[ ] Create a small confusion matrix example."
+      ],
+      "masteryQuestions": [
+        "Why can accuracy be misleading for imbalanced classes?",
+        "What is the difference between precision and recall?"
+      ]
+    },
+    {
+      "id": "day-100",
+      "number": 100,
+      "date": "2026-09-14",
+      "weekId": "week-15",
+      "files": [
+        "`PythonLab\\JA26P10 Trend prediction using Logistic Regression-1\\13_logisticregression_wandb_ks.ipynb`"
+      ],
+      "knowledge": [
+        "Logistic regression for trend prediction."
+      ],
+      "checklist": [
+        "[ ] Run or inspect the notebook.",
+        "[ ] Recreate the modelling pipeline without W&B if necessary.",
+        "[ ] Report confusion matrix and classification metrics."
+      ],
+      "masteryQuestions": [
+        "What does logistic regression output?",
+        "Why is time ordering important in financial prediction?"
+      ]
+    },
+    {
+      "id": "day-101",
+      "number": 101,
+      "date": "2026-09-15",
+      "weekId": "week-15",
+      "files": [
+        "`M4-4\\JA264.4 Exercises.pdf`",
+        "`M4-4\\JA264.4 Solutions.pdf`"
+      ],
+      "knowledge": [
+        "Classification exercise practice."
+      ],
+      "checklist": [
+        "[ ] Attempt at least 2 exercises.",
+        "[ ] Compare with solutions.",
+        "[ ] Add classification metrics to your ML sheet."
+      ],
+      "masteryQuestions": [
+        "What is a false positive in a trading signal model?",
+        "What is a false negative in a trading signal model?"
+      ]
+    },
+    {
+      "id": "day-102",
+      "number": 102,
+      "date": "2026-09-16",
+      "weekId": "week-15",
+      "files": [
+        "`M4-5\\JA264.5 Notes_v2.pdf`",
+        "`M4-5\\JA264.5 Annotated.pdf`"
+      ],
+      "knowledge": [
+        "Decision trees and ensemble models."
+      ],
+      "checklist": [
+        "[ ] Read tree model notes.",
+        "[ ] Explain splits, leaves, depth, and overfitting.",
+        "[ ] Train a simple decision tree classifier."
+      ],
+      "masteryQuestions": [
+        "How does a decision tree make predictions?",
+        "Why can deep trees overfit?"
+      ]
+    },
+    {
+      "id": "day-103",
+      "number": 103,
+      "date": "2026-09-17",
+      "weekId": "week-15",
+      "files": [
+        "`PythonLab\\JA26P11 Gradient Boosting for Price Prediction\\14_gradientboosting_ks.ipynb`"
+      ],
+      "knowledge": [
+        "XGBoost/gradient boosting for price prediction."
+      ],
+      "checklist": [
+        "[ ] Run or inspect the notebook.",
+        "[ ] Recreate feature generation and model training.",
+        "[ ] Compare model output with logistic regression."
+      ],
+      "masteryQuestions": [
+        "What is boosting?",
+        "Why are tree ensembles popular for tabular financial data?"
+      ]
+    },
+    {
+      "id": "day-104",
+      "number": 104,
+      "date": "2026-09-18",
+      "weekId": "week-15",
+      "files": [
+        "`M4-6\\JA264.6 Notes.pdf`",
+        "`M4-6\\JA264.6 Exercises.pdf`",
+        "`M4-7\\JA264.7 Notes.pdf`"
+      ],
+      "knowledge": [
+        "Practical ML case studies, model evaluation, hit rate, information coefficient."
+      ],
+      "checklist": [
+        "[ ] Read case study notes.",
+        "[ ] Inspect `M4-7\\JA264.7 MSE, IC, HR Examples.xlsx`.",
+        "[ ] Calculate hit rate for a simple signal."
+      ],
+      "masteryQuestions": [
+        "What is hit rate?",
+        "What is information coefficient?"
+      ]
+    },
+    {
+      "id": "day-105",
+      "number": 105,
+      "date": "2026-09-19",
+      "weekId": "week-15",
+      "files": [
+        "Review `M4-*`, `PythonLab\\P9\\P10\\P11`."
+      ],
+      "knowledge": [
+        "M4 project."
+      ],
+      "checklist": [
+        "[ ] Build a trend prediction project using logistic regression or XGBoost.",
+        "[ ] Include time-aware split, metrics, and basic backtest interpretation.",
+        "[ ] Write an English model card: data, features, model, limitations."
+      ],
+      "masteryQuestions": [
+        "What leakage risks exist in financial ML?",
+        "How would you decide whether a prediction model is tradable?"
+      ]
+    },
+    {
+      "id": "day-106",
+      "number": 106,
+      "date": "2026-09-20",
+      "weekId": "week-16",
+      "files": [
+        "`M5-1\\JA265.1 Notes.pdf`",
+        "`M5-1\\JA265.1 Exercises.pdf`"
+      ],
+      "knowledge": [
+        "Unsupervised learning I, clustering intuition."
+      ],
+      "checklist": [
+        "[ ] Read unsupervised learning introduction.",
+        "[ ] Define clustering and distance metric.",
+        "[ ] Attempt 1 exercise."
+      ],
+      "masteryQuestions": [
+        "What is unsupervised learning?",
+        "Why does the choice of distance metric matter?"
+      ]
+    },
+    {
+      "id": "day-107",
+      "number": 107,
+      "date": "2026-09-21",
+      "weekId": "week-16",
+      "files": [
+        "`PythonLab\\JA26P12 K-Means Clustering & Self Organising Maps-1\\15_kmeansclustering_v0.ipynb`"
+      ],
+      "knowledge": [
+        "K-Means implementation and interpretation."
+      ],
+      "checklist": [
+        "[ ] Run or inspect K-Means notebook.",
+        "[ ] Recreate K-Means on available data.",
+        "[ ] Plot clusters if possible."
+      ],
+      "masteryQuestions": [
+        "How does K-Means assign observations to clusters?",
+        "What is the role of the number of clusters?"
+      ]
+    },
+    {
+      "id": "day-108",
+      "number": 108,
+      "date": "2026-09-22",
+      "weekId": "week-16",
+      "files": [
+        "`M5-1\\JA265.1 Solutions.pdf`",
+        "`PythonLab\\P12` K-Means notebook."
+      ],
+      "knowledge": [
+        "K-Means validation."
+      ],
+      "checklist": [
+        "[ ] Compare exercise solutions.",
+        "[ ] Try at least two values of k.",
+        "[ ] Explain which k seems more useful."
+      ],
+      "masteryQuestions": [
+        "What is inertia in K-Means?",
+        "What are limitations of K-Means?"
+      ]
+    },
+    {
+      "id": "day-109",
+      "number": 109,
+      "date": "2026-09-23",
+      "weekId": "week-16",
+      "files": [
+        "`M5-2\\JA265.2 Notes.pdf`",
+        "`M5-2\\JA265.2 Exercises.pdf`"
+      ],
+      "knowledge": [
+        "Unsupervised learning II, maps, advanced clustering intuition."
+      ],
+      "checklist": [
+        "[ ] Read notes.",
+        "[ ] Attempt at least 1 exercise.",
+        "[ ] Write a comparison between clustering and classification."
+      ],
+      "masteryQuestions": [
+        "How is clustering different from classification?",
+        "Why can unsupervised learning be useful before supervised modelling?"
+      ]
+    },
+    {
+      "id": "day-110",
+      "number": 110,
+      "date": "2026-09-24",
+      "weekId": "week-16",
+      "files": [
+        "`PythonLab\\JA26P12 K-Means Clustering & Self Organising Maps-1\\16_selforganizingmap_v0.ipynb`"
+      ],
+      "knowledge": [
+        "Self Organising Maps."
+      ],
+      "checklist": [
+        "[ ] Run or inspect SOM notebook.",
+        "[ ] Explain input features and map output.",
+        "[ ] Compare SOM interpretation with K-Means."
+      ],
+      "masteryQuestions": [
+        "What is a Self Organising Map?",
+        "How does SOM help visualise high-dimensional data?"
+      ]
+    },
+    {
+      "id": "day-111",
+      "number": 111,
+      "date": "2026-09-25",
+      "weekId": "week-16",
+      "files": [
+        "`M5-3\\JA265.3 Notes.pdf`",
+        "`M5-3\\JA265.3 Annotated.pdf`"
+      ],
+      "knowledge": [
+        "Deep learning and neural network introduction."
+      ],
+      "checklist": [
+        "[ ] Read neural network introduction.",
+        "[ ] Define neuron, layer, activation, loss.",
+        "[ ] Draw a simple feedforward network."
+      ],
+      "masteryQuestions": [
+        "What is an activation function?",
+        "Why do neural networks need nonlinearity?"
+      ]
+    },
+    {
+      "id": "day-112",
+      "number": 112,
+      "date": "2026-09-26",
+      "weekId": "week-16",
+      "files": [
+        "Review `M5-1` to `M5-3`, `PythonLab\\P12`."
+      ],
+      "knowledge": [
+        "Clustering mini project."
+      ],
+      "checklist": [
+        "[ ] Cluster assets or return features using K-Means.",
+        "[ ] Interpret clusters in financial language.",
+        "[ ] Write limitations of the clustering result."
+      ],
+      "masteryQuestions": [
+        "How would you use clustering in portfolio construction?",
+        "What makes a clustering result unreliable?"
+      ]
+    },
+    {
+      "id": "day-113",
+      "number": 113,
+      "date": "2026-09-27",
+      "weekId": "week-17",
+      "files": [
+        "`M5-4\\JA265.4 Notes.pdf`",
+        "`M5-4\\JA265.4 Python Notebook.zip`"
+      ],
+      "knowledge": [
+        "Neural network implementation details."
+      ],
+      "checklist": [
+        "[ ] Read notes.",
+        "[ ] Extract or inspect Python notebook zip.",
+        "[ ] Identify data, model architecture, loss, optimiser."
+      ],
+      "masteryQuestions": [
+        "What are the main components of a neural network training loop?",
+        "What is the purpose of an optimiser?"
+      ]
+    },
+    {
+      "id": "day-114",
+      "number": 114,
+      "date": "2026-09-28",
+      "weekId": "week-17",
+      "files": [
+        "`PythonLab\\JA26P13 Application of Neural Networks using TensorFlow & Keras\\17_neuralnetworks_v1.ipynb`"
+      ],
+      "knowledge": [
+        "TensorFlow/Keras workflow."
+      ],
+      "checklist": [
+        "[ ] Run or inspect the Keras notebook.",
+        "[ ] Recreate model definition, compile, fit, evaluate steps.",
+        "[ ] Record training and validation performance."
+      ],
+      "masteryQuestions": [
+        "What does `model.compile()` specify?",
+        "Why do we monitor validation loss?"
+      ]
+    },
+    {
+      "id": "day-115",
+      "number": 115,
+      "date": "2026-09-29",
+      "weekId": "week-17",
+      "files": [
+        "`M5-5\\JA265.5 Notes v2.pdf`",
+        "`M5-5\\JA265.5 Additional.pdf`"
+      ],
+      "knowledge": [
+        "Natural Language Processing in finance."
+      ],
+      "checklist": [
+        "[ ] Read NLP notes.",
+        "[ ] Define tokenisation, sentiment, embedding.",
+        "[ ] Write a simple rule-based sentiment example."
+      ],
+      "masteryQuestions": [
+        "What is tokenisation?",
+        "Why can financial text be useful for prediction?"
+      ]
+    },
+    {
+      "id": "day-116",
+      "number": 116,
+      "date": "2026-09-30",
+      "weekId": "week-17",
+      "files": [
+        "`M5-6\\JA265.6 Notes v2.pdf`"
+      ],
+      "knowledge": [
+        "Advanced or continuation material from M5."
+      ],
+      "checklist": [
+        "[ ] Read notes.",
+        "[ ] Extract three key concepts.",
+        "[ ] Connect one concept to a possible financial use case."
+      ],
+      "masteryQuestions": [
+        "What is the most important concept in this lecture?",
+        "How could this concept be used in a financial workflow?"
+      ]
+    },
+    {
+      "id": "day-117",
+      "number": 117,
+      "date": "2026-10-01",
+      "weekId": "week-17",
+      "files": [
+        "`PythonLab\\P13` neural network notebook."
+      ],
+      "knowledge": [
+        "Neural network experimentation."
+      ],
+      "checklist": [
+        "[ ] Change one hyperparameter such as epochs, layer size, or learning rate.",
+        "[ ] Compare performance before and after.",
+        "[ ] Write what changed and why."
+      ],
+      "masteryQuestions": [
+        "What is a hyperparameter?",
+        "Why can a larger neural network overfit?"
+      ]
+    },
+    {
+      "id": "day-118",
+      "number": 118,
+      "date": "2026-10-02",
+      "weekId": "week-17",
+      "files": [
+        "Review `M5-3` to `M5-6`."
+      ],
+      "knowledge": [
+        "Deep learning review."
+      ],
+      "checklist": [
+        "[ ] Build a glossary of 20 neural network and NLP terms.",
+        "[ ] Add one small code example for a dense neural network.",
+        "[ ] Explain when not to use deep learning."
+      ],
+      "masteryQuestions": [
+        "Why is deep learning data hungry?",
+        "What risks arise when applying neural networks to financial markets?"
+      ]
+    },
+    {
+      "id": "day-119",
+      "number": 119,
+      "date": "2026-10-03",
+      "weekId": "week-17",
+      "files": [
+        "Review `PythonLab\\P13`, `M5-5`."
+      ],
+      "knowledge": [
+        "Neural network mini project."
+      ],
+      "checklist": [
+        "[ ] Build a small Keras model and document all steps.",
+        "[ ] Include a training curve if possible.",
+        "[ ] Write a short limitation section."
+      ],
+      "masteryQuestions": [
+        "How would you detect overfitting from training curves?",
+        "What would you do if validation loss increases while training loss decreases?"
+      ]
+    },
+    {
+      "id": "day-120",
+      "number": 120,
+      "date": "2026-10-04",
+      "weekId": "week-18",
+      "files": [
+        "`M5-7\\JA265.7 Notes.pdf`",
+        "`M5-7\\JA265.7 Theory-1.pdf`"
+      ],
+      "knowledge": [
+        "Reinforcement learning theory, agent, environment, reward."
+      ],
+      "checklist": [
+        "[ ] Read RL theory notes.",
+        "[ ] Define state, action, reward, policy.",
+        "[ ] Draw the RL loop."
+      ],
+      "masteryQuestions": [
+        "What are state, action, and reward in reinforcement learning?",
+        "How is reinforcement learning different from supervised learning?"
+      ]
+    },
+    {
+      "id": "day-121",
+      "number": 121,
+      "date": "2026-10-05",
+      "weekId": "week-18",
+      "files": [
+        "`PythonLab\\JA26P14 Reinforcement Learning\\18_reinforcementlearning_ks.ipynb`",
+        "`PythonLab\\JA26P14 Reinforcement Learning\\nifty50.csv`"
+      ],
+      "knowledge": [
+        "RL implementation and stock trading environment."
+      ],
+      "checklist": [
+        "[ ] Run or inspect RL notebook.",
+        "[ ] Identify state, action, reward in the environment.",
+        "[ ] Load `nifty50.csv` and inspect columns."
+      ],
+      "masteryQuestions": [
+        "What is the reward function in the trading environment?",
+        "Why is reward design difficult in finance?"
+      ]
+    },
+    {
+      "id": "day-122",
+      "number": 122,
+      "date": "2026-10-06",
+      "weekId": "week-18",
+      "files": [
+        "`M5-7\\JA265.7 Reinforcment Learning for Dynamic Asset Allocation.txt`",
+        "`M5-7\\JA265.7 Article-1.pdf`"
+      ],
+      "knowledge": [
+        "RL for dynamic asset allocation."
+      ],
+      "checklist": [
+        "[ ] Read the text/article.",
+        "[ ] Summarise how RL is used for allocation.",
+        "[ ] List risks of using RL in live markets."
+      ],
+      "masteryQuestions": [
+        "Why is asset allocation a sequential decision problem?",
+        "What are the dangers of training an RL agent on historical data only?"
+      ]
+    },
+    {
+      "id": "day-123",
+      "number": 123,
+      "date": "2026-10-07",
+      "weekId": "week-18",
+      "files": [
+        "`M5-8\\JA265.8 Notes.pdf`"
+      ],
+      "knowledge": [
+        "Practical ML case studies or continuation topic."
+      ],
+      "checklist": [
+        "[ ] Read notes.",
+        "[ ] Extract three practical lessons.",
+        "[ ] Connect each lesson to your M4 trend prediction project."
+      ],
+      "masteryQuestions": [
+        "What makes a machine learning case study practical rather than theoretical?",
+        "How should a financial ML model be monitored after deployment?"
+      ]
+    },
+    {
+      "id": "day-124",
+      "number": 124,
+      "date": "2026-10-08",
+      "weekId": "week-18",
+      "files": [
+        "`M5-9\\JA265.9 Notes.pdf`"
+      ],
+      "knowledge": [
+        "Quantum computing overview."
+      ],
+      "checklist": [
+        "[ ] Read notes at conceptual level.",
+        "[ ] Define qubit, superposition, quantum algorithm in plain language.",
+        "[ ] Write one paragraph on possible quant finance relevance."
+      ],
+      "masteryQuestions": [
+        "What is a qubit?",
+        "Why is quantum computing still mostly exploratory for finance?"
+      ]
+    },
+    {
+      "id": "day-125",
+      "number": 125,
+      "date": "2026-10-09",
+      "weekId": "week-18",
+      "files": [
+        "`PythonLab\\P14` RL notebook."
+      ],
+      "knowledge": [
+        "RL experiment review."
+      ],
+      "checklist": [
+        "[ ] Change one environment or training parameter if possible.",
+        "[ ] Observe the effect on results.",
+        "[ ] Write a cautious interpretation."
+      ],
+      "masteryQuestions": [
+        "Why are RL results often unstable?",
+        "What would you need before trusting an RL trading strategy?"
+      ]
+    },
+    {
+      "id": "day-126",
+      "number": 126,
+      "date": "2026-10-10",
+      "weekId": "week-18",
+      "files": [
+        "Review all `M5-*` and `PythonLab\\P12\\P13\\P14`."
+      ],
+      "knowledge": [
+        "M5 integration."
+      ],
+      "checklist": [
+        "[ ] Build a comparison table: clustering, neural networks, RL.",
+        "[ ] Write when each method might be useful in finance.",
+        "[ ] Select one method for a final mini project."
+      ],
+      "masteryQuestions": [
+        "How do unsupervised learning, deep learning, and RL differ?",
+        "Which method is most appropriate for dynamic allocation, and why?"
+      ]
+    },
+    {
+      "id": "day-127",
+      "number": 127,
+      "date": "2026-10-11",
+      "weekId": "week-19",
+      "files": [
+        "Review all PythonPrimer files."
+      ],
+      "knowledge": [
+        "Clean Python functions and modules."
+      ],
+      "checklist": [
+        "[ ] Create `My_CQF_Practice\\quant_tools.py`.",
+        "[ ] Add return, volatility, covariance, VaR functions.",
+        "[ ] Test each function with small examples."
+      ],
+      "masteryQuestions": [
+        "Why should reusable code be moved from notebooks into functions?",
+        "What makes a function easy to test?"
+      ]
+    },
+    {
+      "id": "day-128",
+      "number": 128,
+      "date": "2026-10-12",
+      "weekId": "week-19",
+      "files": [
+        "Review `PythonLab\\P2\\P5\\P6\\P8`."
+      ],
+      "knowledge": [
+        "Option pricing function library."
+      ],
+      "checklist": [
+        "[ ] Add BS, binomial, MC, and IV functions to your code.",
+        "[ ] Add docstrings.",
+        "[ ] Create a notebook that imports and tests them."
+      ],
+      "masteryQuestions": [
+        "What information should a docstring include?",
+        "Why should pricing functions be deterministic where possible?"
+      ]
+    },
+    {
+      "id": "day-129",
+      "number": 129,
+      "date": "2026-10-13",
+      "weekId": "week-19",
+      "files": [
+        "Review `PythonLab\\P3\\P4`."
+      ],
+      "knowledge": [
+        "Portfolio and risk functions."
+      ],
+      "checklist": [
+        "[ ] Add portfolio return, volatility, Sharpe, VaR, ES functions.",
+        "[ ] Use a local CSV or Excel dataset.",
+        "[ ] Build a small dashboard notebook."
+      ],
+      "masteryQuestions": [
+        "What input validation should a portfolio function perform?",
+        "Why should weights and returns have compatible dimensions?"
+      ]
+    },
+    {
+      "id": "day-130",
+      "number": 130,
+      "date": "2026-10-14",
+      "weekId": "week-19",
+      "files": [
+        "Review `PythonLab\\P9\\P10\\P11`."
+      ],
+      "knowledge": [
+        "ML pipeline code."
+      ],
+      "checklist": [
+        "[ ] Write a function to create lagged return features.",
+        "[ ] Train one logistic regression model.",
+        "[ ] Output classification metrics."
+      ],
+      "masteryQuestions": [
+        "What is feature leakage?",
+        "Why must lagged features be carefully aligned with labels?"
+      ]
+    },
+    {
+      "id": "day-131",
+      "number": 131,
+      "date": "2026-10-15",
+      "weekId": "week-19",
+      "files": [
+        "Review `PythonLab\\P12\\P13\\P14`."
+      ],
+      "knowledge": [
+        "Advanced ML code review."
+      ],
+      "checklist": [
+        "[ ] Pick one advanced notebook and rewrite the workflow from scratch.",
+        "[ ] Remove unnecessary cells and make it reproducible.",
+        "[ ] Write a short README for the notebook."
+      ],
+      "masteryQuestions": [
+        "What makes a notebook suitable for sharing with another analyst?",
+        "Why should random seeds and package versions be recorded?"
+      ]
+    },
+    {
+      "id": "day-132",
+      "number": 132,
+      "date": "2026-10-16",
+      "weekId": "week-19",
+      "files": [
+        "`pip_list.txt`"
+      ],
+      "knowledge": [
+        "Environment and dependency management."
+      ],
+      "checklist": [
+        "[ ] Review installed packages.",
+        "[ ] Create a short dependency list for your own projects.",
+        "[ ] Note packages that require internet/API access."
+      ],
+      "masteryQuestions": [
+        "Why does package version matter?",
+        "What can happen if a notebook depends on live data downloads?"
+      ]
+    },
+    {
+      "id": "day-133",
+      "number": 133,
+      "date": "2026-10-17",
+      "weekId": "week-19",
+      "files": [
+        "Your practice files."
+      ],
+      "knowledge": [
+        "Coding review."
+      ],
+      "checklist": [
+        "[ ] Refactor one messy notebook into cleaner functions.",
+        "[ ] Add comments only where they clarify assumptions.",
+        "[ ] Run all cells from top to bottom."
+      ],
+      "masteryQuestions": [
+        "What is the difference between exploratory code and production-style code?",
+        "How do you know your code still works after refactoring?"
+      ]
+    },
+    {
+      "id": "day-134",
+      "number": 134,
+      "date": "2026-10-18",
+      "weekId": "week-20",
+      "files": [
+        "Review `M1-1` to `M1-5`."
+      ],
+      "knowledge": [
+        "M1 formula review."
+      ],
+      "checklist": [
+        "[ ] Rebuild the M1 formula sheet from memory.",
+        "[ ] Check against notes.",
+        "[ ] Mark weak formulas."
+      ],
+      "masteryQuestions": [
+        "Which M1 concept is most important for derivative pricing?",
+        "How do martingales support no-arbitrage pricing?"
+      ]
+    },
+    {
+      "id": "day-135",
+      "number": 135,
+      "date": "2026-10-19",
+      "weekId": "week-20",
+      "files": [
+        "Review `M2-1` to `M2-5`."
+      ],
+      "knowledge": [
+        "Portfolio and risk formula review."
+      ],
+      "checklist": [
+        "[ ] Rebuild M2 formula sheet from memory.",
+        "[ ] Recompute portfolio stats and VaR on sample data.",
+        "[ ] Explain VaR limitations."
+      ],
+      "masteryQuestions": [
+        "How does correlation affect portfolio risk?",
+        "Why is Expected Shortfall coherent while VaR may not be?"
+      ]
+    },
+    {
+      "id": "day-136",
+      "number": 136,
+      "date": "2026-10-20",
+      "weekId": "week-20",
+      "files": [
+        "Review `M3-1` to `M3-3`."
+      ],
+      "knowledge": [
+        "Black-Scholes derivation review."
+      ],
+      "checklist": [
+        "[ ] Write BS assumptions from memory.",
+        "[ ] Re-derive the pricing intuition.",
+        "[ ] Test your BS implementation again."
+      ],
+      "masteryQuestions": [
+        "What role does hedging play in the Black-Scholes argument?",
+        "Why does the risk preference of investors disappear in the formula?"
+      ]
+    },
+    {
+      "id": "day-137",
+      "number": 137,
+      "date": "2026-10-21",
+      "weekId": "week-20",
+      "files": [
+        "Review `M3-4` to `M3-6`."
+      ],
+      "knowledge": [
+        "Numerical methods review."
+      ],
+      "checklist": [
+        "[ ] Explain MC, FDM, and linear systems in one page.",
+        "[ ] Recreate MC pricing without looking.",
+        "[ ] Add convergence chart."
+      ],
+      "masteryQuestions": [
+        "When would you choose Monte Carlo over finite differences?",
+        "What does numerical stability mean?"
+      ]
+    },
+    {
+      "id": "day-138",
+      "number": 138,
+      "date": "2026-10-22",
+      "weekId": "week-20",
+      "files": [
+        "Review `M3-7` to `M3-11`."
+      ],
+      "knowledge": [
+        "Volatility, exotic, FX review."
+      ],
+      "checklist": [
+        "[ ] Recreate implied volatility solver.",
+        "[ ] List exotic option types and suitable pricing methods.",
+        "[ ] Summarise FX option inputs."
+      ],
+      "masteryQuestions": [
+        "Why is implied volatility model-dependent?",
+        "How do FX options modify equity option pricing?"
+      ]
+    },
+    {
+      "id": "day-139",
+      "number": 139,
+      "date": "2026-10-23",
+      "weekId": "week-20",
+      "files": [
+        "`Exam 1\\Task1_Solution_Guide.pdf`"
+      ],
+      "knowledge": [
+        "Exam style writing and explanation."
+      ],
+      "checklist": [
+        "[ ] Read solution guide for structure.",
+        "[ ] Write your own answer outline for one section.",
+        "[ ] Identify what makes the explanation clear."
+      ],
+      "masteryQuestions": [
+        "What makes a quantitative answer convincing?",
+        "How should charts and tables support an argument?"
+      ]
+    },
+    {
+      "id": "day-140",
+      "number": 140,
+      "date": "2026-10-24",
+      "weekId": "week-20",
+      "files": [
+        "Your M1-M3 practice notebooks."
+      ],
+      "knowledge": [
+        "Pricing capstone review."
+      ],
+      "checklist": [
+        "[ ] Finalise option pricing library notebook.",
+        "[ ] Add clear markdown explanations.",
+        "[ ] Save as your M1-M3 capstone."
+      ],
+      "masteryQuestions": [
+        "Which pricing concept can you now code independently?",
+        "Which pricing concept still requires more practice?"
+      ]
+    },
+    {
+      "id": "day-141",
+      "number": 141,
+      "date": "2026-10-25",
+      "weekId": "week-21",
+      "files": [
+        "Review `M4-1` to `M4-3`."
+      ],
+      "knowledge": [
+        "ML basics and supervised learning."
+      ],
+      "checklist": [
+        "[ ] Rebuild ML glossary from memory.",
+        "[ ] Recreate a train/test regression workflow.",
+        "[ ] Write three model validation risks."
+      ],
+      "masteryQuestions": [
+        "What is the difference between fitting and generalisation?",
+        "Why is validation difficult in finance?"
+      ]
+    },
+    {
+      "id": "day-142",
+      "number": 142,
+      "date": "2026-10-26",
+      "weekId": "week-21",
+      "files": [
+        "Review `M4-4` to `M4-7`."
+      ],
+      "knowledge": [
+        "Classification, trees, boosting, case studies."
+      ],
+      "checklist": [
+        "[ ] Recreate logistic regression classification.",
+        "[ ] Recreate one tree or boosting model.",
+        "[ ] Compare metrics."
+      ],
+      "masteryQuestions": [
+        "Why might a model with high accuracy still lose money?",
+        "What is the purpose of a backtest?"
+      ]
+    },
+    {
+      "id": "day-143",
+      "number": 143,
+      "date": "2026-10-27",
+      "weekId": "week-21",
+      "files": [
+        "Review `M5-1` to `M5-3`."
+      ],
+      "knowledge": [
+        "Clustering and neural network basics."
+      ],
+      "checklist": [
+        "[ ] Recreate K-Means clustering.",
+        "[ ] Explain neural network components.",
+        "[ ] Write when clustering helps in finance."
+      ],
+      "masteryQuestions": [
+        "Why is clustering exploratory?",
+        "What is the difference between a linear model and a neural network?"
+      ]
+    },
+    {
+      "id": "day-144",
+      "number": 144,
+      "date": "2026-10-28",
+      "weekId": "week-21",
+      "files": [
+        "Review `M5-4` to `M5-6`."
+      ],
+      "knowledge": [
+        "Neural networks and NLP."
+      ],
+      "checklist": [
+        "[ ] Recreate a small Keras model.",
+        "[ ] Write an NLP finance use case.",
+        "[ ] Explain overfitting controls."
+      ],
+      "masteryQuestions": [
+        "What is validation loss?",
+        "Why can text data introduce new biases?"
+      ]
+    },
+    {
+      "id": "day-145",
+      "number": 145,
+      "date": "2026-10-29",
+      "weekId": "week-21",
+      "files": [
+        "Review `M5-7` to `M5-9`."
+      ],
+      "knowledge": [
+        "RL and advanced topics."
+      ],
+      "checklist": [
+        "[ ] Re-explain state/action/reward.",
+        "[ ] Inspect RL notebook again.",
+        "[ ] Write one page on RL limitations in trading."
+      ],
+      "masteryQuestions": [
+        "What is a policy?",
+        "Why can RL overfit to a market regime?"
+      ]
+    },
+    {
+      "id": "day-146",
+      "number": 146,
+      "date": "2026-10-30",
+      "weekId": "week-21",
+      "files": [
+        "Your M4 and M5 notebooks."
+      ],
+      "knowledge": [
+        "ML project design."
+      ],
+      "checklist": [
+        "[ ] Choose final ML project topic.",
+        "[ ] Define data, features, label, model, metrics.",
+        "[ ] Write a project plan."
+      ],
+      "masteryQuestions": [
+        "What is your prediction target?",
+        "What would count as evidence that the model is useful?"
+      ]
+    },
+    {
+      "id": "day-147",
+      "number": 147,
+      "date": "2026-10-31",
+      "weekId": "week-21",
+      "files": [
+        "Your ML project."
+      ],
+      "knowledge": [
+        "ML project build."
+      ],
+      "checklist": [
+        "[ ] Build baseline model.",
+        "[ ] Add at least one improved model.",
+        "[ ] Compare results and write limitations."
+      ],
+      "masteryQuestions": [
+        "Why is a baseline model important?",
+        "What is the simplest explanation of your model's result?"
+      ]
+    },
+    {
+      "id": "day-148",
+      "number": 148,
+      "date": "2026-11-01",
+      "weekId": "week-22",
+      "files": [
+        "Choose from `PythonLab\\P4`, `P5`, `P6`, `P10`, `P11`."
+      ],
+      "knowledge": [
+        "Project topic selection."
+      ],
+      "checklist": [
+        "[ ] Choose one final project: option pricing, risk dashboard, or ML trend prediction.",
+        "[ ] Define objective and success criteria.",
+        "[ ] Create project folder and README outline."
+      ],
+      "masteryQuestions": [
+        "What problem does your project solve?",
+        "Who is the intended user of your project?"
+      ]
+    },
+    {
+      "id": "day-149",
+      "number": 149,
+      "date": "2026-11-02",
+      "weekId": "week-22",
+      "files": [
+        "Relevant module notes for chosen project."
+      ],
+      "knowledge": [
+        "Theory review for project."
+      ],
+      "checklist": [
+        "[ ] List formulas and assumptions needed.",
+        "[ ] Write model limitations before coding.",
+        "[ ] Prepare input data."
+      ],
+      "masteryQuestions": [
+        "What assumptions does your project rely on?",
+        "What data quality issues could affect your result?"
+      ]
+    },
+    {
+      "id": "day-150",
+      "number": 150,
+      "date": "2026-11-03",
+      "weekId": "week-22",
+      "files": [
+        "Relevant PythonLab notebook."
+      ],
+      "knowledge": [
+        "Core implementation."
+      ],
+      "checklist": [
+        "[ ] Implement core functions.",
+        "[ ] Add clear input/output definitions.",
+        "[ ] Run first complete workflow."
+      ],
+      "masteryQuestions": [
+        "What are the main functions in your project?",
+        "How do you know each function works?"
+      ]
+    },
+    {
+      "id": "day-151",
+      "number": 151,
+      "date": "2026-11-04",
+      "weekId": "week-22",
+      "files": [
+        "Project files."
+      ],
+      "knowledge": [
+        "Testing and validation."
+      ],
+      "checklist": [
+        "[ ] Add at least 5 checks or test cases.",
+        "[ ] Compare against known results or alternative method.",
+        "[ ] Document errors and fixes."
+      ],
+      "masteryQuestions": [
+        "What benchmark are you using to validate your results?",
+        "What would make you distrust your output?"
+      ]
+    },
+    {
+      "id": "day-152",
+      "number": 152,
+      "date": "2026-11-05",
+      "weekId": "week-22",
+      "files": [
+        "Project files."
+      ],
+      "knowledge": [
+        "Visualisation and interpretation."
+      ],
+      "checklist": [
+        "[ ] Add at least 3 charts or tables.",
+        "[ ] Write interpretations below each result.",
+        "[ ] Remove unnecessary notebook noise."
+      ],
+      "masteryQuestions": [
+        "What is the most important chart in your project?",
+        "What decision could someone make from your analysis?"
+      ]
+    },
+    {
+      "id": "day-153",
+      "number": 153,
+      "date": "2026-11-06",
+      "weekId": "week-22",
+      "files": [
+        "Project files."
+      ],
+      "knowledge": [
+        "Writing and communication."
+      ],
+      "checklist": [
+        "[ ] Write final README.",
+        "[ ] Add sections: objective, data, method, results, limitations, next steps.",
+        "[ ] Make notebook runnable from top to bottom."
+      ],
+      "masteryQuestions": [
+        "Can a reader understand your project without watching you explain it?",
+        "What is the biggest limitation of your project?"
+      ]
+    },
+    {
+      "id": "day-154",
+      "number": 154,
+      "date": "2026-11-07",
+      "weekId": "week-22",
+      "files": [
+        "Final project."
+      ],
+      "knowledge": [
+        "Final review."
+      ],
+      "checklist": [
+        "[ ] Run the full project once more.",
+        "[ ] Fix broken cells, unclear charts, or missing explanations.",
+        "[ ] Write a final 200-word English project summary."
+      ],
+      "masteryQuestions": [
+        "What did you learn from this project?",
+        "What would you improve if you had another week?"
+      ]
+    },
+    {
+      "id": "day-155",
+      "number": 155,
+      "date": "2026-11-08",
+      "weekId": "week-23",
+      "files": [
+        "Your mistake log."
+      ],
+      "knowledge": [
+        "Weak area diagnosis."
+      ],
+      "checklist": [
+        "[ ] List top 5 weak areas.",
+        "[ ] Choose the most important one.",
+        "[ ] Re-read the relevant notes."
+      ],
+      "masteryQuestions": [
+        "Which topic currently limits your progress the most?",
+        "What concrete evidence shows that this topic is weak?"
+      ]
+    },
+    {
+      "id": "day-156",
+      "number": 156,
+      "date": "2026-11-09",
+      "weekId": "week-23",
+      "files": [
+        "Relevant Exercises/Solutions for weak area 1."
+      ],
+      "knowledge": [
+        "Targeted exercise repair."
+      ],
+      "checklist": [
+        "[ ] Solve 3 exercises from the weak topic.",
+        "[ ] Compare with solutions.",
+        "[ ] Explain mistakes in writing."
+      ],
+      "masteryQuestions": [
+        "What mistake pattern did you notice?",
+        "How will you avoid it next time?"
+      ]
+    },
+    {
+      "id": "day-157",
+      "number": 157,
+      "date": "2026-11-10",
+      "weekId": "week-23",
+      "files": [
+        "Relevant PythonLab notebook for weak area 1."
+      ],
+      "knowledge": [
+        "Targeted coding repair."
+      ],
+      "checklist": [
+        "[ ] Rebuild the relevant code from scratch.",
+        "[ ] Add tests or sanity checks.",
+        "[ ] Explain output line by line."
+      ],
+      "masteryQuestions": [
+        "Which part of the code was hardest to write independently?",
+        "What test gives you confidence that the code works?"
+      ]
+    },
+    {
+      "id": "day-158",
+      "number": 158,
+      "date": "2026-11-11",
+      "weekId": "week-23",
+      "files": [
+        "Your mistake log."
+      ],
+      "knowledge": [
+        "Weak area 2."
+      ],
+      "checklist": [
+        "[ ] Choose second weak area.",
+        "[ ] Re-read relevant notes.",
+        "[ ] Make a one-page summary."
+      ],
+      "masteryQuestions": [
+        "What concept did you misunderstand before?",
+        "How would you now explain it simply?"
+      ]
+    },
+    {
+      "id": "day-159",
+      "number": 159,
+      "date": "2026-11-12",
+      "weekId": "week-23",
+      "files": [
+        "Relevant Exercises/Solutions for weak area 2."
+      ],
+      "knowledge": [
+        "Exercise repair."
+      ],
+      "checklist": [
+        "[ ] Solve 3 exercises.",
+        "[ ] Compare with solutions.",
+        "[ ] Add corrected formulas to cheat sheet."
+      ],
+      "masteryQuestions": [
+        "Which formula or assumption caused difficulty?",
+        "What is the correct interpretation?"
+      ]
+    },
+    {
+      "id": "day-160",
+      "number": 160,
+      "date": "2026-11-13",
+      "weekId": "week-23",
+      "files": [
+        "Relevant PythonLab notebook for weak area 2."
+      ],
+      "knowledge": [
+        "Coding repair."
+      ],
+      "checklist": [
+        "[ ] Rebuild the related code.",
+        "[ ] Change one input and predict output before running.",
+        "[ ] Explain whether the output matched expectation."
+      ],
+      "masteryQuestions": [
+        "What did you expect before running the code?",
+        "What did the result teach you?"
+      ]
+    },
+    {
+      "id": "day-161",
+      "number": 161,
+      "date": "2026-11-14",
+      "weekId": "week-23",
+      "files": [
+        "All formula sheets and project files."
+      ],
+      "knowledge": [
+        "Repair review."
+      ],
+      "checklist": [
+        "[ ] Update all cheat sheets.",
+        "[ ] Update final project if weak area affected it.",
+        "[ ] Write a final weak-area reflection."
+      ],
+      "masteryQuestions": [
+        "Which weak area improved the most?",
+        "What still needs spaced review?"
+      ]
+    },
+    {
+      "id": "day-162",
+      "number": 162,
+      "date": "2026-11-15",
+      "weekId": "week-24",
+      "files": [
+        "`M1-*` notes and your M1 notebooks."
+      ],
+      "knowledge": [
+        "M1 oral/written exam."
+      ],
+      "checklist": [
+        "[ ] Explain random walks, binomial pricing, Ito, martingales.",
+        "[ ] Code Brownian motion and binomial pricing from memory.",
+        "[ ] Review mistakes."
+      ],
+      "masteryQuestions": [
+        "Explain in English how martingales relate to no-arbitrage pricing.",
+        "Code a binomial call pricer without looking at previous code."
+      ]
+    },
+    {
+      "id": "day-163",
+      "number": 163,
+      "date": "2026-11-16",
+      "weekId": "week-24",
+      "files": [
+        "`M2-*` notes and your M2 notebooks."
+      ],
+      "knowledge": [
+        "M2 oral/written exam."
+      ],
+      "checklist": [
+        "[ ] Explain portfolio optimisation, VaR, ES, GARCH.",
+        "[ ] Code VaR/ES from memory.",
+        "[ ] Review mistakes."
+      ],
+      "masteryQuestions": [
+        "Explain the difference between VaR and Expected Shortfall.",
+        "Code historical VaR and ES for a return series."
+      ]
+    },
+    {
+      "id": "day-164",
+      "number": 164,
+      "date": "2026-11-17",
+      "weekId": "week-24",
+      "files": [
+        "`M3-*` notes and your option pricing project."
+      ],
+      "knowledge": [
+        "M3 oral/written exam."
+      ],
+      "checklist": [
+        "[ ] Explain BS, MC, FDM, IV, exotic options.",
+        "[ ] Code BS and MC from memory.",
+        "[ ] Review mistakes."
+      ],
+      "masteryQuestions": [
+        "Explain why Monte Carlo is useful for path-dependent derivatives.",
+        "Code a Black-Scholes call price and verify put-call parity."
+      ]
+    },
+    {
+      "id": "day-165",
+      "number": 165,
+      "date": "2026-11-18",
+      "weekId": "week-24",
+      "files": [
+        "`M4-*` notes and your ML notebooks."
+      ],
+      "knowledge": [
+        "M4 oral/written exam."
+      ],
+      "checklist": [
+        "[ ] Explain supervised learning, classification metrics, tree models.",
+        "[ ] Build a simple scikit-learn pipeline from memory.",
+        "[ ] Review mistakes."
+      ],
+      "masteryQuestions": [
+        "Explain why data leakage is dangerous in financial machine learning.",
+        "Build a train/test classification workflow and report a confusion matrix."
+      ]
+    },
+    {
+      "id": "day-166",
+      "number": 166,
+      "date": "2026-11-19",
+      "weekId": "week-24",
+      "files": [
+        "`M5-*` notes and your advanced ML notebooks."
+      ],
+      "knowledge": [
+        "M5 oral/written exam."
+      ],
+      "checklist": [
+        "[ ] Explain clustering, neural networks, NLP, RL.",
+        "[ ] Recreate one K-Means or Keras workflow.",
+        "[ ] Review mistakes."
+      ],
+      "masteryQuestions": [
+        "Compare supervised learning, unsupervised learning, and reinforcement learning.",
+        "Explain why RL is difficult to use safely in trading."
+      ]
+    },
+    {
+      "id": "day-167",
+      "number": 167,
+      "date": "2026-11-20",
+      "weekId": "week-24",
+      "files": [
+        "Final integrated project."
+      ],
+      "knowledge": [
+        "Presentation rehearsal."
+      ],
+      "checklist": [
+        "[ ] Present your final project out loud in English for 5 minutes.",
+        "[ ] Explain objective, data, model, results, limitations.",
+        "[ ] Fix anything unclear."
+      ],
+      "masteryQuestions": [
+        "What is the strongest part of your final project?",
+        "What is the weakest assumption in your final project?"
+      ]
+    },
+    {
+      "id": "day-168",
+      "number": 168,
+      "date": "2026-11-21",
+      "weekId": "week-24",
+      "files": [
+        "All project files and notes."
+      ],
+      "knowledge": [
+        "Final checkpoint."
+      ],
+      "checklist": [
+        "[ ] Write a final self-assessment.",
+        "[ ] List what you can now code independently.",
+        "[ ] Create a next-step plan for M6 or deeper specialisation."
+      ],
+      "masteryQuestions": [
+        "Which CQF topics can you now explain and code independently?",
+        "What should your next quant project be, and why?",
+        "Fixed income products and yield curve basics.",
+        "Stochastic interest rate models.",
+        "Calibration and data analysis.",
+        "HJM and multifactor forward rate models.",
+        "Further Monte Carlo for rates.",
+        "Cointegration for trading.",
+        "CDS pricing, intensity models, CDO/correlation sensitivity.",
+        "XVA and final project preparation.",
+        "Build a yield curve and CDS pricing notebook.",
+        "Explain model assumptions, calibration inputs, pricing output, and risk sensitivities.",
+        "What is the difference between a discount curve and a forward curve?",
+        "Why does interest rate modelling require different assumptions from equity option pricing?",
+        "What is default intensity?",
+        "How does CDS pricing connect credit risk and cash flow discounting?",
+        "What does XVA add to a clean derivatives price?"
+      ]
+    }
+  ]
+}

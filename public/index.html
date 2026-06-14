@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CQF Lexicon</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <span class="brand-mark">CQF</span>
+          <div>
+            <h1>CQF Lexicon</h1>
+            <p>金融工程英文词汇本</p>
+          </div>
+        </div>
+        <nav class="tabs" aria-label="Main sections">
+          <button class="tab active" data-view="review">今日复习</button>
+          <button class="tab" data-view="plan">CQF学习计划</button>
+          <button class="tab" data-view="add">添加词汇</button>
+          <button class="tab" data-view="library">词汇库</button>
+          <button class="tab" data-view="stats">统计</button>
+        </nav>
+      </aside>
+
+      <main class="workspace">
+        <section class="toolbar">
+          <div>
+            <p class="eyebrow">每天 22:00 飞书提醒</p>
+            <h2 id="view-title">今日复习</h2>
+          </div>
+          <button id="refresh-button" class="icon-button" title="刷新" aria-label="刷新">
+            &#8635;
+          </button>
+        </section>
+
+        <section id="review-view" class="view active">
+          <div class="summary-grid">
+            <div class="metric">
+              <span>待复习</span>
+              <strong id="due-count">0</strong>
+            </div>
+            <div class="metric">
+              <span>总词汇</span>
+              <strong id="total-count">0</strong>
+            </div>
+            <div class="metric">
+              <span>已掌握</span>
+              <strong id="mastered-count">0</strong>
+            </div>
+          </div>
+          <div id="review-list" class="word-list"></div>
+        </section>
+
+        <section id="plan-view" class="view">
+          <div class="plan-toolbar">
+            <div>
+              <h3>日期进度</h3>
+              <p>点击日期跳转到当天任务，勾选表示当天已完成。</p>
+            </div>
+            <button id="today-plan-button" class="secondary-button" type="button">跳到今天</button>
+          </div>
+          <div id="plan-date-strip" class="date-strip"></div>
+          <div id="study-plan-list" class="study-plan-list"></div>
+        </section>
+
+        <section id="add-view" class="view">
+          <form id="add-form" class="form-panel">
+            <label>
+              <span>英文词汇</span>
+              <input id="word-input" name="word" type="text" placeholder="martingale" required />
+            </label>
+            <label>
+              <span>CQF 官方模块</span>
+              <select id="module-select" name="moduleId" required></select>
+            </label>
+            <label>
+              <span>标签</span>
+              <input id="tags-input" name="tags" type="text" placeholder="pricing, hard" />
+            </label>
+            <button id="add-button" class="primary-button" type="submit">生成并保存</button>
+          </form>
+          <div id="add-status" class="status"></div>
+        </section>
+
+        <section id="library-view" class="view">
+          <div class="filters">
+            <input id="search-input" type="search" placeholder="搜索词汇或标签" />
+            <select id="filter-module"></select>
+            <button id="refresh-ai-button" class="secondary-button" type="button">
+              刷新占位解释
+            </button>
+          </div>
+          <div id="library-status" class="status"></div>
+          <div id="library-list" class="word-list"></div>
+        </section>
+
+        <section id="stats-view" class="view">
+          <div class="summary-grid">
+            <div class="metric">
+              <span>累计复习</span>
+              <strong id="reviewed-count">0</strong>
+            </div>
+            <div class="metric">
+              <span>难词</span>
+              <strong id="difficult-count">0</strong>
+            </div>
+            <div class="metric">
+              <span>掌握率</span>
+              <strong id="mastery-rate">0%</strong>
+            </div>
+          </div>
+          <button id="test-reminder-button" class="secondary-button" type="button">
+            测试飞书提醒
+          </button>
+          <div id="reminder-status" class="status"></div>
+        </section>
+      </main>
+    </div>
+    <script src="/app.js"></script>
+  </body>
+</html>

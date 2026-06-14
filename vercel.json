@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "https://YOUR_LOBSTER_SERVER_DOMAIN/$1"
+    }
+  ]
+}
