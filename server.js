@@ -13,7 +13,10 @@ loadEnv();
 
 const config = {
   port: Number(process.env.PORT || 8787),
+  host: process.env.HOST || "0.0.0.0",
   publicBaseUrl: process.env.PUBLIC_BASE_URL || "http://localhost:8787",
+  trustProxy: String(process.env.TRUST_PROXY || "true").toLowerCase() === "true",
+  allowedHosts: normalizeList(process.env.ALLOWED_HOSTS || ""),
   zhipuApiKey: process.env.ZHIPU_API_KEY || "",
   zhipuModel: process.env.ZHIPU_MODEL || "glm-4.7-flash",
   zhipuApiUrl:
@@ -91,15 +94,30 @@ let reminderSentKey = "";
 async function main() {
   await ensureStore();
   const server = http.createServer(handleRequest);
-  server.listen(config.port, () => {
-    console.log(`CQF Lexicon running at http://localhost:${config.port}`);
+  server.listen(config.port, config.host, () => {
+    console.log(`CQF Lexicon running at http://${config.host}:${config.port}`);
   });
   setInterval(runReminderCheck, 60 * 1000);
 }
 
 async function handleRequest(req, res) {
   try {
+    if (!isAllowedHost(req)) {
+      return sendJson(res, { error: "Host is not allowed." }, 403);
+    }
+
     const url = new URL(req.url, `http://${req.headers.host}`);
+
+    if ((url.pathname === "/healthz" || url.pathname === "/api/health") && req.method === "GET") {
+      return sendJson(res, {
+        ok: true,
+        app: "cqf-lexicon",
+        publicBaseUrl: config.publicBaseUrl,
+        receivedHost: getForwardedHost(req),
+        protocol: getForwardedProto(req),
+        time: new Date().toISOString(),
+      });
+    }
 
     if (url.pathname === "/api/modules" && req.method === "GET") {
       return sendJson(res, { modules });
@@ -549,6 +567,33 @@ function normalizeTags(value) {
     .split(",")
     .map((tag) => tag.trim())
     .filter(Boolean);
+}
+
+function normalizeList(value) {
+  return String(value || "")
+    .split(",")
+    .map((item) => item.trim().toLowerCase())
+    .filter(Boolean);
+}
+
+function isAllowedHost(req) {
+  if (!config.allowedHosts.length) return true;
+  const host = getForwardedHost(req).toLowerCase();
+  return config.allowedHosts.includes(host);
+}
+
+function getForwardedHost(req) {
+  if (config.trustProxy && req.headers["x-forwarded-host"]) {
+    return String(req.headers["x-forwarded-host"]).split(",")[0].trim();
+  }
+  return String(req.headers.host || "");
+}
+
+function getForwardedProto(req) {
+  if (config.trustProxy && req.headers["x-forwarded-proto"]) {
+    return String(req.headers["x-forwarded-proto"]).split(",")[0].trim();
+  }
+  return "http";
 }
 
 function isDue(value) {

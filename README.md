@@ -85,21 +85,45 @@ Set these environment variables on the target server:
 
 ```text
 PORT=8787
-PUBLIC_BASE_URL=https://your-domain.example.com
+HOST=0.0.0.0
+PUBLIC_BASE_URL=https://cqf.lupinyang.com.cn
+TRUST_PROXY=true
+ALLOWED_HOSTS=cqf.lupinyang.com.cn,YOUR_LOBSTER_SERVER_HOST:8787
 ZHIPU_API_KEY=your_key_here
 ZHIPU_MODEL=glm-4.7-flash
 ZHIPU_API_URL=https://open.bigmodel.cn/api/paas/v4/chat/completions
 ```
 
-If Vercel is used only as the public routing layer, update `vercel.json`:
+When Vercel is used only as the public routing layer, expose the app on the server's public port and update `vercel.json`:
 
 ```json
 {
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "https://YOUR_LOBSTER_SERVER_DOMAIN/$1"
+      "destination": "http://YOUR_LOBSTER_SERVER_HOST:8787/$1"
     }
   ]
 }
 ```
+
+Deployment shape:
+
+```text
+cqf.lupinyang.com.cn -> Vercel -> http://YOUR_LOBSTER_SERVER_HOST:8787
+```
+
+The Node service must listen on all network interfaces:
+
+```bash
+HOST=0.0.0.0 PORT=8787 npm start
+```
+
+After deployment, check the origin and the Vercel domain:
+
+```text
+http://YOUR_LOBSTER_SERVER_HOST:8787/healthz
+https://cqf.lupinyang.com.cn/healthz
+```
+
+If you keep `ALLOWED_HOSTS` strict and test the origin by IP, include the IP and port in `ALLOWED_HOSTS`, or send the expected Host header in your check.
