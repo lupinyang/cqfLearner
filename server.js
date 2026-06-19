@@ -8,6 +8,7 @@ const DATA_DIR = path.join(ROOT, "data");
 const STORE_PATH = path.join(DATA_DIR, "store.json");
 const PUBLIC_DIR = path.join(ROOT, "public");
 const STUDY_PLAN_PATH = path.join(PUBLIC_DIR, "study-plan.json");
+const MODULES_PATH = path.join(PUBLIC_DIR, "modules.json");
 
 loadEnv();
 
@@ -30,56 +31,7 @@ const config = {
   reminderMinute: Number(process.env.REMINDER_MINUTE || 0),
 };
 
-const modules = [
-  {
-    id: "m1",
-    name: "Module 1",
-    title: "Building Blocks of Quantitative Finance",
-    topics:
-      "asset behavior, binomial models, stochastic calculus, PDEs, martingales",
-  },
-  {
-    id: "m2",
-    name: "Module 2",
-    title: "Quantitative Risk & Return",
-    topics:
-      "portfolio management, optimization, VaR, expected shortfall, volatility, Basel, collateral",
-  },
-  {
-    id: "m3",
-    name: "Module 3",
-    title: "Equities & Currencies",
-    topics:
-      "Black-Scholes, option pricing, numerical methods, exotic options, volatility, FX options",
-  },
-  {
-    id: "m4",
-    name: "Module 4",
-    title: "Data Science & Machine Learning I",
-    topics:
-      "machine learning, supervised learning, decision trees, ensembles, finance case studies",
-  },
-  {
-    id: "m5",
-    name: "Module 5",
-    title: "Data Science & Machine Learning II",
-    topics:
-      "unsupervised learning, neural networks, NLP, reinforcement learning, market prediction",
-  },
-  {
-    id: "m6",
-    name: "Module 6",
-    title: "Fixed Income & Credit",
-    topics:
-      "fixed income, interest rates, HJM, yield curves, CDS, credit models, XVA",
-  },
-  {
-    id: "final",
-    name: "Final Project",
-    title: "Final Project / Exam Prep",
-    topics: "revision, implementation, exam preparation, project write-up",
-  },
-];
+const modules = require(MODULES_PATH);
 
 const mimeTypes = {
   ".html": "text/html; charset=utf-8",
