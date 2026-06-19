@@ -14,7 +14,7 @@ A lightweight Feishu web app prototype for collecting CQF vocabulary, generating
 ## Run locally
 
 ```powershell
-cd D:\CQF\Jan26\cqf-lexicon
+cd D:\CQF\Jan26\apps\cqf-learner
 Copy-Item .env.example .env
 npm start
 ```
@@ -63,7 +63,7 @@ For the first version, `FEISHU_RECEIVE_ID` is configured manually.
 
 ## Tencent Cloud deployment notes
 
-1. Upload the `cqf-lexicon` folder to your server.
+1. Upload the `apps/cqf-learner` folder to your server.
 2. Create `.env` from `.env.example`.
 3. Run with a process manager such as PM2.
 4. Put Nginx in front and enable HTTPS.

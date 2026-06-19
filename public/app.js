@@ -36,7 +36,7 @@ function bindEvents() {
   document.getElementById("filter-module").addEventListener("change", loadLibrary);
   document.getElementById("add-form").addEventListener("submit", addWord);
   document.getElementById("test-reminder-button").addEventListener("click", testReminder);
-  document.getElementById("today-plan-button").addEventListener("click", scrollToTodayPlan);
+  document.getElementById("today-plan-button").addEventListener("click", scrollToFirstOpenPlan);
   document.getElementById("refresh-ai-button").addEventListener("click", regeneratePlaceholders);
 }
 
@@ -282,8 +282,7 @@ function renderStudyPlanDates() {
         <label class="date-check ${completed ? "done" : ""}" title="Day ${day.number}">
           <input type="checkbox" data-plan-date="${day.date}" ${completed ? "checked" : ""} />
           <button type="button" data-scroll-date="${day.date}">
-            <span>Day ${day.number}</span>
-            <strong>${day.date}</strong>
+            <strong>Day ${day.number}</strong>
           </button>
         </label>
       `;
@@ -298,8 +297,7 @@ function studyDayCard(day) {
     <article id="plan-${day.date}" class="study-day ${completed ? "completed" : ""}">
       <header class="study-day-header">
         <div>
-          <p>Day ${day.number}</p>
-          <h4>${escapeHtml(day.date)}</h4>
+          <h4>Day ${day.number}</h4>
         </div>
         <label class="complete-toggle">
           <input type="checkbox" data-plan-date="${day.date}" ${completed ? "checked" : ""} />
@@ -333,13 +331,7 @@ function bindStudyPlanInputs(root) {
   });
 }
 
-function scrollToTodayPlan() {
-  const today = new Date().toISOString().slice(0, 10);
-  const hasToday = state.studyPlan?.days.some((day) => day.date === today);
-  if (hasToday) {
-    scrollToStudyDay(today);
-    return;
-  }
+function scrollToFirstOpenPlan() {
   const firstOpen = state.studyPlan?.days.find((day) => !state.studyPlan.completedDays[day.date]);
   if (firstOpen) scrollToStudyDay(firstOpen.date);
 }

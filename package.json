@@ -1,5 +1,5 @@
 {
-  "name": "cqf-lexicon",
+  "name": "cqf-learner",
   "version": "0.1.0",
   "private": true,
   "description": "CQF vocabulary and study plan web app for Feishu.",

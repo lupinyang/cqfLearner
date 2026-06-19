@@ -2,7 +2,7 @@ const fs = require("node:fs");
 const path = require("node:path");
 
 const root = path.join(__dirname, "..");
-const sourcePath = path.join(root, "..", "CQF_Daily_Study_Plan.md");
+const sourcePath = path.join(root, "..", "..", "CQF_Daily_Study_Plan.md");
 const outputPath = path.join(root, "public", "study-plan.json");
 
 const source = fs.readFileSync(sourcePath, "utf8");
