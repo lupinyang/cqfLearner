@@ -131,7 +131,12 @@ async function handleRequest(req, res) {
         return sendJson(res, { error: "This word already exists.", item: existing }, 409);
       }
 
-      const ai = await generateExplanation(word, module, tags);
+      let ai;
+      try {
+        ai = await generateExplanation(word, module, tags);
+      } catch (error) {
+        return sendJson(res, { error: explainGenerationError(error) }, 502);
+      }
       const now = new Date().toISOString();
       const item = {
         id: crypto.randomUUID(),
@@ -281,15 +286,15 @@ async function generateExplanation(word, module, tags) {
     }),
   });
 
+  const responseText = await response.text();
+  const data = parseJsonResponse(responseText, "Zhipu API");
   if (!response.ok) {
-    const text = await response.text();
-    throw new Error(`Zhipu request failed: ${response.status} ${text}`);
+    throw new Error(`Zhipu request failed: ${response.status} ${extractApiError(data)}`);
   }
 
-  const data = await response.json();
   const content = data?.choices?.[0]?.message?.content;
   if (!content) throw new Error("Zhipu response did not include content.");
-  return sanitizeAiJson(JSON.parse(content));
+  return sanitizeAiJson(parseModelJson(content));
 }
 
 function fallbackExplanation(word, module, tags) {
@@ -323,7 +328,48 @@ function explainGenerationError(error) {
   if (message.includes("EACCES") || message.includes("fetch failed")) {
     return "无法连接智谱 API。请确认当前运行环境可以访问外网 HTTPS，并且 ZHIPU_API_KEY 已配置。";
   }
+  if (message.includes("Model JSON parse failed")) {
+    return "智谱返回的内容不是有效 JSON。请重新点击生成；如果持续出现，请降低模型温度或检查模型名称。";
+  }
+  if (message.includes("Zhipu API returned non-JSON")) {
+    return "智谱 API 返回了非 JSON 响应。请检查智谱服务状态、API Key 和模型名称。";
+  }
   return message;
+}
+
+function parseJsonResponse(text, source) {
+  try {
+    return JSON.parse(text);
+  } catch {
+    const preview = String(text || "").slice(0, 180);
+    throw new Error(`${source} returned non-JSON response: ${preview}`);
+  }
+}
+
+function parseModelJson(content) {
+  if (typeof content === "object" && content !== null) return content;
+  const raw = String(content || "").trim();
+  const withoutFence = raw
+    .replace(/^```(?:json)?\s*/i, "")
+    .replace(/\s*```$/i, "")
+    .trim();
+  const start = withoutFence.indexOf("{");
+  const end = withoutFence.lastIndexOf("}");
+  const candidate = start >= 0 && end > start ? withoutFence.slice(start, end + 1) : withoutFence;
+  try {
+    return JSON.parse(candidate);
+  } catch (error) {
+    throw new Error(`Model JSON parse failed: ${String(error?.message || error)}; content=${candidate.slice(0, 180)}`);
+  }
+}
+
+function extractApiError(data) {
+  return (
+    data?.error?.message ||
+    data?.msg ||
+    data?.message ||
+    JSON.stringify(data).slice(0, 240)
+  );
 }
 
 function sanitizeAiJson(value) {

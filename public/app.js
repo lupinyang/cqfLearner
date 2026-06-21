@@ -463,7 +463,13 @@ async function api(url, options = {}) {
     headers: { "Content-Type": "application/json" },
     ...options,
   });
-  const data = await response.json();
+  const text = await response.text();
+  let data = {};
+  try {
+    data = text ? JSON.parse(text) : {};
+  } catch {
+    data = { error: text || "请求失败" };
+  }
   if (!response.ok) throw new Error(data.error || "请求失败");
   return data;
 }
